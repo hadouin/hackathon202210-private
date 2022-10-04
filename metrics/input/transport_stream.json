@@ -1,0 +1,24 @@
+{
+	
+	"transformers": {
+		"type": "parse_transport_stream",
+		"arguments": {
+			"filename": "/home/outscale/media/test_transformers.ts",
+			"md5sum": "todo"
+		}
+	},
+	"scrat": {
+		"type": "parse_transport_stream",
+		"arguments": {
+			"filename": "/home/outscale/media/test_scrat.ts",
+			"md5sum": "todo"
+		}
+	},
+	"casino_royale": {
+		"type": "parse_transport_stream",
+		"arguments": {
+			"filename": "/home/outscale/media/test_casino_royale.ts",
+			"md5sum": "todo"
+		}
+	}
+}
