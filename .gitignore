@@ -36,7 +36,6 @@ override.tf.json
 .terraformrc
 terraform.rc
 
-*_connect.sh
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
