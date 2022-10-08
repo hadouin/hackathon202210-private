@@ -1,4 +1,3 @@
-
 CREATE TABLE product_items (
     id SERIAL PRIMARY KEY,
     product_id integer NOT NULL,
