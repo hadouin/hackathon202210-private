@@ -41,51 +41,6 @@ resource "outscale_security_group_rule" "hackathon_vscode" {
   }
 }
 
-# SG common for all VMs
-resource "outscale_security_group" "hackathon_web" {
-    security_group_name = "hackathon-web"
-}
-
-resource "outscale_security_group_rule" "hackathon_web" {
-  flow              = "Inbound"
-  security_group_id = outscale_security_group.hackathon_web.id
-  rules {
-    from_port_range = "8000"
-    to_port_range   = "8000"
-    ip_protocol     = "tcp"
-    ip_ranges       = ["0.0.0.0/0"]
-  }
-}
-
-# SG MongoDB
-resource "outscale_security_group" "hackathon_mongodb" {
-    security_group_name = "hackathon-mongodb"
-}
-
-# SG MondoDB rule
-resource "outscale_security_group_rule" "hackathon_mongodb" {
-  flow              = "Inbound"
-  security_group_id = outscale_security_group.hackathon_mongodb.id
-  rules {
-    from_port_range = "27017"
-    to_port_range   = "27017"
-    ip_protocol     = "tcp"
-    ip_ranges       = ["0.0.0.0/0"]
-  }
-}
-
-# SG MondoDB rule
-resource "outscale_security_group_rule" "hackathon_mongo_express" {
-  flow              = "Inbound"
-  security_group_id = outscale_security_group.hackathon_mongodb.id
-  rules {
-    from_port_range = "8081"
-    to_port_range   = "8081"
-    ip_protocol     = "tcp"
-    ip_ranges       = ["0.0.0.0/0"]
-  }
-}
-
 # SG Postgres
 resource "outscale_security_group" "hackathon_postgre" {
     security_group_name = "hackathon-postgres"
