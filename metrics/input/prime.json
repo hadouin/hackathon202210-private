@@ -1,0 +1,22 @@
+{
+	"1": {
+		"type": "sum_prime_numbers",
+		"arguments": {"n": 598}
+	},
+	"2": {
+		"type": "sum_prime_numbers",
+		"arguments": {"n": 598}
+	},
+	"3":{
+		"type": "prime_numbers",
+		"arguments": {"n": 486}
+	},
+	"4":{
+		"type": "prime_numbers",
+		"arguments": {"n": 10000}
+	},
+	"5":{
+		"type": "prime_numbers",
+		"arguments": {"n": 100}
+	}
+}
