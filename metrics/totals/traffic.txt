@@ -1,1 +1,1 @@
-Total traffic: 0.0821(GB), Traffic power consumption: 8.21(Wh)
+Total traffic: 0.0823(GB), Traffic power consumption: 8.23(Wh)

@@ -72,16 +72,7 @@ def sink_aggregation(json_data):
 
     identifier_data = json_data["info"]["identifier"]
 
-    # Mongo Insert data into mongoDB
-    try:
-        mongo_server = MongoClient(f"mongodb://{MONGO_DB_USERNAME}:{MONGO_DB_PASSWORD}@{MONGO_DB_HOST}:{MONGO_DB_PORT}/")
-        insert_data_mongo(mongo_server,aggregate_data)        
-
-        # Find the data into mongoDB
-        result_aggregate_data = find_data_mongo(mongo_server,identifier_data)
-    except:
-        result_aggregate_data = {}
-    return result_aggregate_data
+    return aggregate_data
 
 
 def find_min(array,key):
