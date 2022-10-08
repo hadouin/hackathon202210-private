@@ -14,13 +14,14 @@ or the error message
 
 """
 
+
 DATE_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
-FOS_LIST = ["CC29", "23FE"]
+FOS_LIST = ["CC29","23FE"]
 
 
 def to_unsigned(hexa_string, n):
     l = len(hexa_string)
-    cmplt = int("F" * l, 16)
+    cmplt = int("F"*l,16)
     cmplt2 = int("8" + "0" * (l - 1), 16)
     n = n & cmplt
     return n | (-(n & cmplt2))
@@ -30,7 +31,7 @@ def decode_hex_to_dec(hexa_string):
     len_string = len(hexa_string)
     reversed_hexa_string = ""
     for i in range(len_string, 0, -2):
-        reversed_hexa_string += hexa_string[i - 2:i]
+        reversed_hexa_string += hexa_string[i-2:i]
 
     return to_unsigned(hexa_string, int(reversed_hexa_string, 16))
 
@@ -46,13 +47,12 @@ def decode_date(hexa_string):
     month = int(str("{0:08b}".format(int(hexa_string[6:8], 16)))[4:8], 2)
     # year
     year_thousand = 1900 + 100 * int(str("{0:08b}".format(int(hexa_string[2:4], 16)))[1:3], 2)
-    year_cut = int(
-        str("{0:08b}".format(int(hexa_string[6:8], 16)))[0:4] + str("{0:08b}".format(int(hexa_string[4:6], 16)))[0:3],
-        2)
+    year_cut = int(str("{0:08b}".format(int(hexa_string[6:8], 16)))[0:4] + str("{0:08b}".format(int(hexa_string[4:6], 16)))[0:3],2)
     year = year_thousand + year_cut
 
     date = datetime.datetime(year, month, day, hour, minute)
     return date
+
 
 
 def frame_to_json(frame):
@@ -64,16 +64,16 @@ def frame_to_json(frame):
         ("MetrologicalSerialNumber", frame[10:26]),
         ("CustomerSerialNumber", frame[26:58]),
         ("Backflow",
-         OrderedDict([
-             ("value", decode_hex_to_dec(frame[58:66])),
-             ("unit", "m3")
-         ])
+            OrderedDict([
+                ("value", decode_hex_to_dec(frame[58:66])),
+                ("unit", "m3")
+            ])
          ),
         ("SignalStrenght",
-         OrderedDict([
-             ("value", decode_hex_to_dec(frame[66:70])),
-             ("unit", "dbm")
-         ])
+             OrderedDict([
+                 ("value", decode_hex_to_dec(frame[66:70])),
+                 ("unit", "dbm")
+            ])
          ),
         ("SignalQuality",
          OrderedDict([
@@ -83,10 +83,10 @@ def frame_to_json(frame):
          ),
         ("Alarms", frame[72:80]),
         ("Battery Remaining",
-         OrderedDict([
-             ("value", decode_hex_to_dec(frame[80:84])),
-             ("unit", "days")
-         ])
+             OrderedDict([
+                 ("value", decode_hex_to_dec(frame[80:84])),
+                 ("unit", "days")
+             ])
          ),
         ("Operating Time",
          OrderedDict([
@@ -109,14 +109,14 @@ def frame_to_json(frame):
              ("storage", 1)
          ])
          ),
-        ("CompactProfile", [
-            OrderedDict([
-                ("value", decode_hex_to_dec(frame[128:132])),
-                ("unit", "m3"),
-                ("storage", 1),
-                ("date", (date + datetime.timedelta(minutes=-15)).strftime(DATE_FORMAT))
+        ("CompactProfile",[
+         OrderedDict([
+             ("value", decode_hex_to_dec(frame[128:132])),
+             ("unit", "m3"),
+             ("storage", 1),
+             ("date", (date + datetime.timedelta(minutes=-15)).strftime(DATE_FORMAT))
 
-            ]),
+         ]),
             OrderedDict([
                 ("value", decode_hex_to_dec(frame[132:136])),
                 ("unit", "m3"),
@@ -138,18 +138,26 @@ def frame_to_json(frame):
                 ("date", (date + datetime.timedelta(minutes=-60)).strftime(DATE_FORMAT))
 
             ])
-        ]
+         ]
          ),
 
     ])
 
 
 def decode_frame(frame):
+    str=""
     if len(frame) != 144:
-        return "Invalid frame"
+        str="Invalid frame"
     elif frame[0:2] != "79":
-        return "Frame doesn't start with 79"
+        str="Frame doesn't start with 79"
     elif frame[2:6] not in FOS_LIST:
-        return "Invalid FOS"
+        str="Invalid FOS"
     else:
-        return json.dumps(frame_to_json(frame), indent=4)
+        frame_dict = frame_to_json(frame)
+        str=json.dumps(frame_dict, indent=4)
+    return str
+
+
+
+
+
