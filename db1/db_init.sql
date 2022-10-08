@@ -29,7 +29,7 @@ INSERT INTO quote (id, quote, author) VALUES
 CREATE TABLE product_items (
     id SERIAL PRIMARY KEY,
     product_id integer NOT NULL,
-    name varchar(1000) NOT NULL,
+    name varchar(100) NOT NULL,
     price numeric NOT NULL
 );
 
