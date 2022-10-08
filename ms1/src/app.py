@@ -18,9 +18,10 @@ PASSWORD = "postgres"
 
 app = Flask(__name__)
 
+
 @app.route("/")
 def hello_world():
-    return "<p>Welcome to the hackaton app!</p>"
+    return "<p>Welcome to the hackathon app!</p>"
 
 
 """
@@ -37,6 +38,8 @@ Return: List of product items
 To test the method:
     curl -i -X GET http://<ms1-ip>:8000/product_items/1
 """
+
+
 @app.route('/product_items/<product_id>')
 def product_items(product_id):
     conn = None
@@ -50,10 +53,10 @@ def product_items(product_id):
 
         cur = conn.cursor()
 
-        cur.execute(f"""SELECT * FROM product_items WHERE product_id={product_id}""")
+        cur.execute(f"SELECT * FROM product_items WHERE product_id={product_id}")
         items = cur.fetchall()
         # convert arrays into objects
-        items = [{"id":i[0], "product_id": i[1], "name": i[2], "price": i[3] } for i in items]
+        items = [{"id": i[0], "product_id": i[1], "name": i[2], "price": i[3]} for i in items]
 
         return jsonify(items), 200
 
@@ -64,12 +67,12 @@ def product_items(product_id):
         if cur:
             cur.close()
         if conn:
-            conn.close()     
+            conn.close()
 
 
 """
 Add new item into "product_items" table.
-Request paramaters:
+Request parameters:
     - id 
     - product_id
     - name
@@ -79,6 +82,8 @@ To test the method:
     curl -i -H "Content-Type: application/json" -X PUT -d '{"id":1000, "product_id":100, "name":"some name", "price":11}' \
         http://<ms1-ip>:8000/product_item
 """
+
+
 @app.route('/product_item', methods=['PUT'])
 def add_product_item():
     params = request.json
@@ -93,11 +98,11 @@ def add_product_item():
 
         cur = conn.cursor()
 
-        cur.execute(f"""INSERT INTO product_items (product_id, name, price) VALUES 
-            ({params['product_id']}, '{params['name']}', {params['price']})""")
+        cur.execute(
+            f"INSERT INTO product_items (product_id, name, price) VALUES ({params['product_id']}, '{params['name']}', {params['price']})")
         conn.commit()
 
-        return "The product items was successefully added", 200
+        return "The product items was successfully added", 200
 
     except Exception as e:
         return jsonify(e.messages), 400
@@ -117,6 +122,8 @@ Request paramaters:
 To test the method:
     curl -i -X DELETE http://<ms1-ip>:8000/product/100
 """
+
+
 @app.route('/product/<product_id>', methods=['DELETE'])
 def delete_product(product_id):
     conn = None
@@ -130,10 +137,10 @@ def delete_product(product_id):
 
         cur = conn.cursor()
 
-        cur.execute(f"""DELETE FROM product_items WHERE product_id = {product_id}""")
+        cur.execute(f"DELETE FROM product_items WHERE product_id = {product_id}")
         conn.commit()
 
-        return f"Product {product_id} was successefully deleted", 200
+        return f"Product {product_id} was successfully deleted", 200
 
     except Exception as e:
         return jsonify(e.messages), 400
