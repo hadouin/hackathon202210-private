@@ -11,12 +11,12 @@ terraform {
 provider "outscale" {}
 
 resource "outscale_keypair" "keypair01" {
-    keypair_name = "hackathon-hippo"
+    keypair_name = "hackathon-hippo2"
 }
 
 # SG common for all VMs
 resource "outscale_security_group" "hackathon_common" {
-    security_group_name = "hackathon-common-hippo"
+    security_group_name = "hackathon-common-hippo2"
 }
 
 resource "outscale_security_group_rule" "hackathon_ssh" {
@@ -43,7 +43,7 @@ resource "outscale_security_group_rule" "hackathon_vscode" {
 
 # SG common for all VMs
 resource "outscale_security_group" "hackathon_web" {
-    security_group_name = "hackathon-web-hippo"
+    security_group_name = "hackathon-web-hippo2"
 }
 
 resource "outscale_security_group_rule" "hackathon_web" {
@@ -59,7 +59,7 @@ resource "outscale_security_group_rule" "hackathon_web" {
 
 # SG MongoDB
 resource "outscale_security_group" "hackathon_mongodb" {
-    security_group_name = "hackathon-mongodb-hippo"
+    security_group_name = "hackathon-mongodb-hippo2"
 }
 
 # SG MondoDB rule
@@ -88,7 +88,7 @@ resource "outscale_security_group_rule" "hackathon_mongo_express" {
 
 # SG Postgres
 resource "outscale_security_group" "hackathon_postgre" {
-    security_group_name = "hackathon-postgres-hippo"
+    security_group_name = "hackathon-postgres-hippo2"
 }
 
 # SG Postgres rule
