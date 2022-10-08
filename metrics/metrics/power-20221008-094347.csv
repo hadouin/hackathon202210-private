@@ -1,0 +1,292 @@
+____________________________________________________________________
+			P o w e r T O P
+
+____________________________________________________________________
+ *  *  *   System Information   *  *  *
+
+PowerTOP Version;v2.11-1-g7ef7f79 ran at Sat Oct  8 09:43:47 2022
+
+Kernel Version;Linux version 5.4.0-104-generic
+System Name;pc-i440fx-4.1
+CPU Information;4 Intel Xeon Processor (Skylake)
+OS Information;Ubuntu 20.04.4 LTS
+
+Target: 1 units/s;System:  1285.5 wakeup/s;CPU:  22.7% usage;GPU: 0 ops/s;GFX: 0 wakeups/s;VFS: 0 ops/s;
+
+____________________________________________________________________
+ *  *  *   Top 10 Power Consumers   *  *  *
+
+Usage;Events/s;Category;Description;PW Estimate
+  0.9%;503.7;Interrupt;[3] net_rx(softirq);  2.00 W  
+  0.1%;265.9;Timer;tick_sched_timer;  1.05 W  
+  0.0%; 56.5;Process;[PID 11] [rcu_sched];  223 mW  
+  0.5%; 38.5;Process;[PID 16714] /usr/bin/python3 /usr/bin/flask run --host=0.0.0.0 -p 8000 ;  161 mW  
+  0.4%; 21.2;Process;[PID 374] /lib/systemd/systemd-journald ; 89.2 mW  
+  0.0%; 21.4;kWork;free_work; 84.7 mW  
+  0.1%; 12.0;Interrupt;[7] sched(softirq); 48.7 mW  
+  0.0%; 11.1;Timer;hrtimer_wakeup; 44.0 mW  
+  0.0%; 10.2;Interrupt;[32] virtio1-output.0; 40.9 mW  
+  0.0%;  5.5;Process;[PID 8761] /usr/bin/containerd ; 22.0 mW  
+
+____________________________________________________________________
+ *  *  *   Processor Idle State Report   *  *  *
+
+Package;0
+;
+;
+;
+
+CPU;0
+CPU;1
+CPU;2
+CPU;3
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+
+____________________________________________________________________
+ *  *  *   Processor Frequency Report   *  *  *
+
+Package;0
+Idle; 100.0% 
+;
+;
+;
+;
+
+CPU 0
+Idle; 100.0% 
+CPU 1
+Idle; 100.0% 
+CPU 2
+Idle; 100.0% 
+CPU 3
+Idle; 100.0% 
+;
+;
+;
+;
+;
+;
+;
+;
+
+____________________________________________________________________
+ *  *  *   Overview of Software Power Consumers   *  *  *
+
+Usage;Wakeups/s;GPU ops/s;Disk IO/s;GFX Wakeups/s;Category;Description;PW Estimate
+  9.0 ms/s;503.7;;;;Interrupt;[3] net_rx(softirq);  2.00 W  
+  1.2 ms/s;265.9;;;;Timer;tick_sched_timer;  1.05 W  
+140.5 us/s; 56.5;;;;Process;[PID 11] [rcu_sched];  223 mW  
+  5.4 ms/s; 38.5;;;;Process;[PID 16714] /usr/bin/python3 /usr/bin/flask run --host=0.0.0.0 -p 8000 ;  161 mW  
+  3.5 ms/s; 21.2;;;;Process;[PID 374] /lib/systemd/systemd-journald ; 89.2 mW  
+125.8 us/s; 21.4;;;;kWork;free_work; 84.7 mW  
+  0.8 ms/s; 12.0;;;;Interrupt;[7] sched(softirq); 48.7 mW  
+175.1 us/s; 11.1;;;;Timer;hrtimer_wakeup; 44.0 mW  
+396.1 us/s; 10.2;;;;Interrupt;[32] virtio1-output.0; 40.9 mW  
+ 95.0 us/s;  5.5;;;;Process;[PID 8761] /usr/bin/containerd ; 22.0 mW  
+ 25.9 us/s;  4.7;;;;kWork;psi_avgs_work; 18.7 mW  
+199.1 us/s;  4.6;;;;Process;[PID 8766] /usr/bin/containerd ; 18.5 mW  
+156.4 us/s;  3.9;;;;Process;[PID 8768] /usr/bin/containerd ; 15.8 mW  
+ 14.8 us/s;  3.9;;;;Process;[PID 867] /usr/lib/snapd/snapd ; 15.6 mW  
+ 25.4 us/s;  1.9;;;;Process;[PID 18] [ksoftirqd/1]; 7.67 mW  
+  7.2 us/s;  1.7;;;;Process;[PID 24] [ksoftirqd/2]; 6.59 mW  
+357.2 us/s;  0.9;;;;Process;[PID 24386] flask; 4.24 mW  
+347.5 us/s;  0.9;;;;Process;[PID 24377] flask; 4.23 mW  
+441.6 us/s;  0.9;;;;Process;[PID 24755] flask; 4.11 mW  
+410.8 us/s;  0.9;;;;Process;[PID 24433] flask; 4.06 mW  
+409.4 us/s;  0.9;;;;Process;[PID 24517] flask; 4.06 mW  
+404.3 us/s;  0.9;;;;Process;[PID 24401] flask; 4.05 mW  
+401.9 us/s;  0.9;;;;Process;[PID 24484] flask; 4.05 mW  
+399.6 us/s;  0.9;;;;Process;[PID 24558] flask; 4.04 mW  
+393.3 us/s;  0.9;;;;Process;[PID 24618] flask; 4.04 mW  
+392.4 us/s;  0.9;;;;Process;[PID 24707] flask; 4.03 mW  
+391.2 us/s;  0.9;;;;Process;[PID 24829] flask; 4.03 mW  
+388.6 us/s;  0.9;;;;Process;[PID 24526] flask; 4.03 mW  
+387.6 us/s;  0.9;;;;Process;[PID 24622] flask; 4.03 mW  
+387.2 us/s;  0.9;;;;Process;[PID 24679] flask; 4.03 mW  
+384.5 us/s;  0.9;;;;Process;[PID 24347] flask; 4.02 mW  
+383.6 us/s;  0.9;;;;Process;[PID 24727] flask; 4.02 mW  
+383.3 us/s;  0.9;;;;Process;[PID 24677] flask; 4.02 mW  
+381.9 us/s;  0.9;;;;Process;[PID 24356] flask; 4.02 mW  
+381.7 us/s;  0.9;;;;Process;[PID 24486] flask; 4.02 mW  
+380.0 us/s;  0.9;;;;Process;[PID 24367] flask; 4.01 mW  
+378.8 us/s;  0.9;;;;Process;[PID 24518] flask; 4.01 mW  
+378.5 us/s;  0.9;;;;Process;[PID 24385] flask; 4.01 mW  
+377.8 us/s;  0.9;;;;Process;[PID 24407] flask; 4.01 mW  
+375.5 us/s;  0.9;;;;Process;[PID 24537] flask; 4.01 mW  
+373.4 us/s;  0.9;;;;Process;[PID 24555] flask; 4.00 mW  
+370.3 us/s;  0.9;;;;Process;[PID 24411] flask; 4.00 mW  
+370.2 us/s;  0.9;;;;Process;[PID 24528] flask; 4.00 mW  
+370.1 us/s;  0.9;;;;Process;[PID 24624] flask; 4.00 mW  
+369.9 us/s;  0.9;;;;Process;[PID 24794] flask; 4.00 mW  
+369.2 us/s;  0.9;;;;Process;[PID 24786] flask; 4.00 mW  
+367.8 us/s;  0.9;;;;Process;[PID 24777] flask; 4.00 mW  
+367.5 us/s;  0.9;;;;Process;[PID 24782] flask; 3.99 mW  
+366.6 us/s;  0.9;;;;Process;[PID 24527] flask; 3.99 mW  
+365.1 us/s;  0.9;;;;Process;[PID 24827] flask; 3.99 mW  
+365.1 us/s;  0.9;;;;Process;[PID 24416] flask; 3.99 mW  
+364.9 us/s;  0.9;;;;Process;[PID 24833] flask; 3.99 mW  
+364.7 us/s;  0.9;;;;Process;[PID 24802] flask; 3.99 mW  
+364.5 us/s;  0.9;;;;Process;[PID 24371] flask; 3.99 mW  
+364.3 us/s;  0.9;;;;Process;[PID 24499] flask; 3.99 mW  
+363.8 us/s;  0.9;;;;Process;[PID 24437] flask; 3.99 mW  
+362.9 us/s;  0.9;;;;Process;[PID 24494] flask; 3.99 mW  
+362.6 us/s;  0.9;;;;Process;[PID 24835] flask; 3.99 mW  
+ 24.7 us/s;  1.0;;;;Process;[PID 525] /sbin/multipathd -d -s ; 3.99 mW  
+361.4 us/s;  0.9;;;;Process;[PID 24431] flask; 3.99 mW  
+360.7 us/s;  0.9;;;;Process;[PID 24441] flask; 3.98 mW  
+360.2 us/s;  0.9;;;;Process;[PID 24818] flask; 3.98 mW  
+360.0 us/s;  0.9;;;;Process;[PID 24390] flask; 3.98 mW  
+359.8 us/s;  0.9;;;;Process;[PID 24409] flask; 3.98 mW  
+359.2 us/s;  0.9;;;;Process;[PID 24498] flask; 3.98 mW  
+358.8 us/s;  0.9;;;;Process;[PID 24488] flask; 3.98 mW  
+358.7 us/s;  0.9;;;;Process;[PID 24694] flask; 3.98 mW  
+358.3 us/s;  0.9;;;;Process;[PID 24500] flask; 3.98 mW  
+357.6 us/s;  0.9;;;;Process;[PID 24393] flask; 3.98 mW  
+357.5 us/s;  0.9;;;;Process;[PID 24534] flask; 3.98 mW  
+357.3 us/s;  0.9;;;;Process;[PID 24414] flask; 3.98 mW  
+357.2 us/s;  0.9;;;;Process;[PID 24485] flask; 3.98 mW  
+356.6 us/s;  0.9;;;;Process;[PID 24413] flask; 3.98 mW  
+356.1 us/s;  0.9;;;;Process;[PID 24444] flask; 3.98 mW  
+355.6 us/s;  0.9;;;;Process;[PID 24710] flask; 3.98 mW  
+355.4 us/s;  0.9;;;;Process;[PID 24655] flask; 3.98 mW  
+355.2 us/s;  0.9;;;;Process;[PID 24657] flask; 3.98 mW  
+354.8 us/s;  0.9;;;;Process;[PID 24749] flask; 3.97 mW  
+354.6 us/s;  0.9;;;;Process;[PID 24516] flask; 3.97 mW  
+354.2 us/s;  0.9;;;;Process;[PID 24442] flask; 3.97 mW  
+354.0 us/s;  0.9;;;;Process;[PID 24635] flask; 3.97 mW  
+353.9 us/s;  0.9;;;;Process;[PID 24462] flask; 3.97 mW  
+353.9 us/s;  0.9;;;;Process;[PID 24502] flask; 3.97 mW  
+353.9 us/s;  0.9;;;;Process;[PID 24514] flask; 3.97 mW  
+353.8 us/s;  0.9;;;;Process;[PID 24731] flask; 3.97 mW  
+353.3 us/s;  0.9;;;;Process;[PID 24753] flask; 3.97 mW  
+353.3 us/s;  0.9;;;;Process;[PID 24506] flask; 3.97 mW  
+353.1 us/s;  0.9;;;;Process;[PID 24684] flask; 3.97 mW  
+352.7 us/s;  0.9;;;;Process;[PID 24814] flask; 3.97 mW  
+352.5 us/s;  0.9;;;;Process;[PID 24405] flask; 3.97 mW  
+352.3 us/s;  0.9;;;;Process;[PID 24429] flask; 3.97 mW  
+351.3 us/s;  0.9;;;;Process;[PID 24698] flask; 3.97 mW  
+351.2 us/s;  0.9;;;;Process;[PID 24475] flask; 3.97 mW  
+351.1 us/s;  0.9;;;;Process;[PID 24705] flask; 3.97 mW  
+351.1 us/s;  0.9;;;;Process;[PID 24454] flask; 3.97 mW  
+351.1 us/s;  0.9;;;;Process;[PID 24659] flask; 3.97 mW  
+351.0 us/s;  0.9;;;;Process;[PID 24696] flask; 3.97 mW  
+351.0 us/s;  0.9;;;;Process;[PID 24724] flask; 3.97 mW  
+350.9 us/s;  0.9;;;;Process;[PID 24418] flask; 3.97 mW  
+350.6 us/s;  0.9;;;;Process;[PID 24545] flask; 3.97 mW  
+
+
+The system baseline power is estimated at:  5.43  W;
+____________________________________________________________________
+ *  *  *   Device Power Report   *  *  *
+
+Usage;Device Name;PW Estimate
+ 22.8%;CPU misc;  5.43 W   
+ 22.8%;CPU core;    0 mW   
+ 22.8%;DRAM;    0 mW   
+ 1904 pkts/s;Network interface: eth0 (virtio_net);           
+100.0%;PCI Device: Intel Corporation 440FX - 82441FX PMC [Natoma];           
+100.0%;PCI Device: Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II];           
+100.0%;PCI Device: Red Hat, Inc. Virtio network device;           
+100.0%;PCI Device: Intel Corporation 82371SB PIIX3 ISA [Natoma/Triton II];           
+100.0%;PCI Device: Intel Corporation 82371SB PIIX3 USB [Natoma/Triton II];           
+100.0%;PCI Device: Intel Corporation 82371AB/EB/MB PIIX4 ACPI;           
+100.0%;PCI Device: Red Hat, Inc. Virtio SCSI;           
+100.0%;PCI Device: Red Hat, Inc. Virtio block device;           
+100.0%;USB device: QEMU USB Tablet (QEMU);           
+100.0%;USB device: UHCI Host Controller;           
+100.0%;PCI Device: Device 1234:1111;           
+100.0%;PCI Device: Red Hat, Inc. Virtio RNG;           
+  0.0 pkts/s;nic:docker0;           
+  0.0%;runtime-alarmtimer.0.auto;           
+  0.0%;runtime-reg-dummy;           
+  0.0%;runtime-kgdboc;           
+  0.0%;runtime-platform-framebuffer.0;           
+  0.0%;runtime-eisa.0;           
+  0.0%;runtime-Fixed MDIO bus.0;           
+  0.0%;runtime-PNP0103:00;           
+  0.0%;runtime-serial8250;           
+  0.0%;runtime-i8042;           
+  0.0%;runtime-pcspkr;           
+  0.0%;runtime-QEMU0002:00;           
+____________________________________________________________________
+ *  *  *   Process Device Activity   *  *  *
+
+Process;Device
+systemd;/dev/autofs
+;/dev/kmsg
+;/dev/rfkill
+systemd-journal;/dev/kmsg
+;/dev/kmsg
+multipathd;/dev/mapper/control
+systemd-logind;/dev/input/event0
+;/dev/input/event1
+none;/dev/kmsg
+
+____________________________________________________________________
+ *  *  *   AHCI ALPM Residency Statistics - Not supported on this macine   *  *  *
+
+____________________________________________________________________
+ *  *  *   Software Settings in Need of Tuning   *  *  *
+
+Description;Script
+VM writeback timeout;echo '1500' > '/proc/sys/vm/dirty_writeback_centisecs';
+Autosuspend for USB device QEMU USB Tablet [QEMU];echo 'auto' > '/sys/bus/usb/devices/1-1/power/control';
+Runtime PM for PCI Device Intel Corporation 440FX - 82441FX PMC [Natoma];echo 'auto' > '/sys/bus/pci/devices/0000:00:00.0/power/control';
+Runtime PM for PCI Device Intel Corporation 82371SB PIIX3 USB [Natoma/Triton II];echo 'auto' > '/sys/bus/pci/devices/0000:00:01.2/power/control';
+Runtime PM for disk sda;echo 'auto' > '/sys/block/sda/device/power/control';
+Runtime PM for PCI Device Intel Corporation 82371SB PIIX3 ISA [Natoma/Triton II];echo 'auto' > '/sys/bus/pci/devices/0000:00:01.0/power/control';
+Runtime PM for PCI Device Red Hat, Inc. Virtio block device;echo 'auto' > '/sys/bus/pci/devices/0000:00:04.0/power/control';
+Runtime PM for PCI Device Red Hat, Inc. Virtio RNG;echo 'auto' > '/sys/bus/pci/devices/0000:00:1e.0/power/control';
+Runtime PM for PCI Device Red Hat, Inc. Virtio SCSI;echo 'auto' > '/sys/bus/pci/devices/0000:00:01.5/power/control';
+Runtime PM for PCI Device Intel Corporation 82371AB/EB/MB PIIX4 ACPI;echo 'auto' > '/sys/bus/pci/devices/0000:00:01.3/power/control';
+Runtime PM for PCI Device Red Hat, Inc. Virtio network device;echo 'auto' > '/sys/bus/pci/devices/0000:00:03.0/power/control';
+Runtime PM for PCI Device Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II];echo 'auto' > '/sys/bus/pci/devices/0000:00:01.1/power/control';
+Runtime PM for port ata1 of PCI device: Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II];echo 'auto' > '/sys/bus/pci/devices/0000:00:01.1/ata1/power/control';
+Runtime PM for port ata2 of PCI device: Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II];echo 'auto' > '/sys/bus/pci/devices/0000:00:01.1/ata2/power/control';
+Runtime PM for PCI Device Device 1234:1111;echo 'auto' > '/sys/bus/pci/devices/0000:00:02.0/power/control';
+____________________________________________________________________
+ *  *  *   Untunable Software Issues   *  *  *
+
+Description
+____________________________________________________________________
+ *  *  *   Optimal Tuned Software Settings   *  *  *
+
+Description
+NMI watchdog should be turned off
+Autosuspend for USB device UHCI Host Controller [usb1]
+
+____________________________________________________________________
+ *  *  *   Wake status of the devices   *  *  *
+
+Description;Script
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';

@@ -1,0 +1,285 @@
+____________________________________________________________________
+			P o w e r T O P
+
+____________________________________________________________________
+ *  *  *   System Information   *  *  *
+
+PowerTOP Version;v2.11-1-g7ef7f79 ran at Sat Oct  8 09:44:18 2022
+
+Kernel Version;Linux version 5.4.0-104-generic
+System Name;pc-i440fx-4.1
+CPU Information;4 Intel Xeon Processor (Skylake)
+OS Information;Ubuntu 20.04.4 LTS
+
+Target: 1 units/s;System:  69.1 wakeup/s;CPU:  0.2% usage;GPU: 0 ops/s;GFX: 0 wakeups/s;VFS: 0 ops/s;
+
+____________________________________________________________________
+ *  *  *   Top 10 Power Consumers   *  *  *
+
+Usage;Events/s;Category;Description;PW Estimate
+  0.0%; 13.9;Process;[PID 8761] /usr/bin/containerd ; 55.0 mW  
+  0.0%; 12.5;Process;[PID 8766] /usr/bin/containerd ; 49.8 mW  
+  0.0%; 10.3;Timer;tick_sched_timer; 40.9 mW  
+  0.0%;  8.5;Timer;hrtimer_wakeup; 33.8 mW  
+  0.0%;  5.4;Process;[PID 11] [rcu_sched]; 21.4 mW  
+  0.0%;  5.1;kWork;psi_avgs_work; 20.0 mW  
+  0.0%;  2.6;Process;[PID 8768] /usr/bin/containerd ; 10.5 mW  
+  0.0%;  2.0;Process;[PID 16714] /usr/bin/python3 /usr/bin/flask run --host=0.0.0.0 -p 8000 ; 8.08 mW  
+  0.0%;  2.0;Process;[PID 525] /sbin/multipathd -d -s ; 7.96 mW  
+  0.0%;  1.1;Process;[PID 17906] ifstat -n -t -w -i eth0 ; 4.70 mW  
+
+____________________________________________________________________
+ *  *  *   Processor Idle State Report   *  *  *
+
+Package;0
+;
+;
+;
+
+CPU;0
+CPU;1
+CPU;2
+CPU;3
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+
+____________________________________________________________________
+ *  *  *   Processor Frequency Report   *  *  *
+
+Package;0
+Idle; 100.0% 
+;
+;
+;
+;
+
+CPU 0
+Idle; 100.0% 
+CPU 1
+Idle; 100.0% 
+CPU 2
+Idle; 100.0% 
+CPU 3
+Idle; 100.0% 
+;
+;
+;
+;
+;
+;
+;
+;
+
+____________________________________________________________________
+ *  *  *   Overview of Software Power Consumers   *  *  *
+
+Usage;Wakeups/s;GPU ops/s;Disk IO/s;GFX Wakeups/s;Category;Description;PW Estimate
+158.3 us/s; 13.9;;;;Process;[PID 8761] /usr/bin/containerd ; 55.0 mW  
+333.2 us/s; 12.5;;;;Process;[PID 8766] /usr/bin/containerd ; 49.8 mW  
+ 80.4 us/s; 10.3;;;;Timer;tick_sched_timer; 40.9 mW  
+211.8 us/s;  8.5;;;;Timer;hrtimer_wakeup; 33.8 mW  
+ 20.6 us/s;  5.4;;;;Process;[PID 11] [rcu_sched]; 21.4 mW  
+ 19.1 us/s;  5.1;;;;kWork;psi_avgs_work; 20.0 mW  
+157.6 us/s;  2.6;;;;Process;[PID 8768] /usr/bin/containerd ; 10.5 mW  
+114.1 us/s;  2.0;;;;Process;[PID 16714] /usr/bin/python3 /usr/bin/flask run --host=0.0.0.0 -p 8000 ; 8.08 mW  
+ 37.6 us/s;  2.0;;;;Process;[PID 525] /sbin/multipathd -d -s ; 7.96 mW  
+146.2 us/s;  1.1;;;;Process;[PID 17906] ifstat -n -t -w -i eth0 ; 4.70 mW  
+  4.9 us/s;  0.9;;;;kWork;blk_mq_requeue_work; 3.69 mW  
+ 13.7 us/s;  0.9;;;;Interrupt;[4] block(softirq); 3.44 mW  
+  3.1 us/s;  0.5;;;;Timer;sched_rt_period_timer; 1.85 mW  
+ 22.3 us/s; 0.27;;;;kWork;wb_workfn; 1.09 mW  
+356.3 us/s; 0.13;;;;Process;[PID 17746] powertop --csv=/data/metrics/power.csv --time=15 --iteration=1000 ; 1.08 mW  
+ 14.8 us/s; 0.27;;;;Process;[PID 791] /usr/lib/accountsservice/accounts-daemon ; 1.08 mW  
+  5.6 us/s; 0.27;;;;Timer;watchdog_timer_fn; 1.06 mW  
+  3.5 us/s; 0.27;;;;kWork;vmstat_shepherd; 1.06 mW  
+  0.8 us/s; 0.27;;;;kWork;blk_mq_timeout_work; 1.05 mW  
+ 17.2 us/s; 0.20;;;;Process;[PID 521] /sbin/multipathd -d -s ;  817 uW  
+ 13.4 us/s; 0.20;;;;Process;[PID 297] [jbd2/vda1-8];  811 uW  
+ 12.1 us/s; 0.20;;;;Process;[PID 24935] journal-offline;  809 uW  
+ 93.9 us/s; 0.13;;;;Interrupt;[7] sched(softirq);  673 uW  
+ 12.6 us/s; 0.13;;;;Process;[PID 1899] [jbd2/sda1-8];  546 uW  
+ 11.1 us/s; 0.13;;;;Process;[PID 24934] journal-offline;  544 uW  
+  3.8 us/s; 0.13;;;;Process;[PID 10358] /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock ;  532 uW  
+  1.6 us/s; 0.13;;;;Process;[PID 10355] /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock ;  529 uW  
+  0.7 us/s; 0.13;;;;kWork;free_work;  528 uW  
+101.0 us/s; 0.07;;;;Interrupt;[1] timer(softirq);  421 uW  
+247.4 us/s;;;;;Timer;rh_timer_func;  386 uW  
+ 37.6 us/s; 0.07;;;;Interrupt;[9] RCU(softirq);  322 uW  
+ 16.4 us/s; 0.07;;;;Process;[PID 374] /lib/systemd/systemd-journald ;  289 uW  
+ 15.7 us/s; 0.07;;;;Process;[PID 784] /usr/sbin/irqbalance --foreground ;  288 uW  
+  4.9 us/s; 0.07;;;;Process;[PID 24935] systemd-journal;  271 uW  
+  3.7 us/s; 0.07;;;;Process;[PID 24934] systemd-journal;  269 uW  
+  2.3 us/s; 0.07;;;;Process;[PID 10378] /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock ;  267 uW  
+  0.5 us/s; 0.07;;;;Process;[PID 24] [ksoftirqd/2];  264 uW  
+  0.3 us/s; 0.07;;;;kWork;addrconf_verify_work;  264 uW  
+  0.2 us/s; 0.07;;;;kWork;neigh_periodic_work;  264 uW  
+ 80.0 us/s;;;;;Timer;tw_timer_handler;  125 uW  
+ 41.5 us/s;;;;;Timer;delayed_work_timer_fn;    0 mW  
+ 15.3 us/s;;;;;Process;[PID 98] [kworker/2:1];    0 mW  
+ 15.2 us/s;;;;;Timer;blk_stat_timer_fn;    0 mW  
+ 12.1 us/s;;;;;Process;[PID 17431] [kworker/1:0];    0 mW  
+ 11.4 us/s;;;;;Timer;process_timeout;    0 mW  
+  9.7 us/s;;;;;Process;[PID 100] [kworker/3:1];    0 mW  
+  7.1 us/s;;;;;Process;[PID 17409] [kworker/0:3];    0 mW  
+  5.7 us/s;;;;;Timer;clocksource_watchdog;    0 mW  
+  3.4 us/s;;;;;kWork;vmstat_update;    0 mW  
+  3.0 us/s;;;;;Process;[PID 296] [kworker/2:1H];    0 mW  
+  3.0 us/s;;;;;Process;[PID 111] [kworker/u8:2];    0 mW  
+  2.0 us/s;;;;;Timer;blk_rq_timed_out_timer;    0 mW  
+  2.0 us/s;;;;;Interrupt;[25] virtio2-req.0;    0 mW  
+  2.0 us/s;;;;;Interrupt;[29] virtio0-request;    0 mW  
+  2.0 us/s;;;;;Process;[PID 12] [migration/0];    0 mW  
+  1.9 us/s;;;;;Process;[PID 17] [migration/1];    0 mW  
+  1.8 us/s;;;;;Process;[PID 23] [migration/2];    0 mW  
+  1.1 us/s;;;;;Timer;commit_timeout;    0 mW  
+  1.1 us/s;;;;;Process;[PID 185] [kworker/3:1H];    0 mW  
+  0.9 us/s;;;;;Process;[PID 29] [migration/3];    0 mW  
+  0.8 us/s;;;;;Timer;timerfd_tmrproc;    0 mW  
+  0.8 us/s;;;;;Process;[PID 331] [kworker/0:1H];    0 mW  
+  0.5 us/s;;;;;Timer;writeout_period;    0 mW  
+  0.3 us/s;;;;;Process;[PID 326] [kworker/1:1H];    0 mW  
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+
+
+The system baseline power is estimated at:  277 m W;
+____________________________________________________________________
+ *  *  *   Device Power Report   *  *  *
+
+Usage;Device Name;PW Estimate
+  0.3%;CPU misc;  277 mW   
+  0.3%;CPU core;    0 mW   
+  0.3%;DRAM;    0 mW   
+100.0%;PCI Device: Intel Corporation 82371AB/EB/MB PIIX4 ACPI;           
+100.0%;PCI Device: Intel Corporation 440FX - 82441FX PMC [Natoma];           
+100.0%;PCI Device: Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II];           
+100.0%;PCI Device: Red Hat, Inc. Virtio network device;           
+100.0%;PCI Device: Intel Corporation 82371SB PIIX3 ISA [Natoma/Triton II];           
+100.0%;PCI Device: Intel Corporation 82371SB PIIX3 USB [Natoma/Triton II];           
+100.0%;PCI Device: Red Hat, Inc. Virtio block device;           
+100.0%;USB device: QEMU USB Tablet (QEMU);           
+100.0%;USB device: UHCI Host Controller;           
+100.0%;PCI Device: Red Hat, Inc. Virtio RNG;           
+100.0%;PCI Device: Device 1234:1111;           
+100.0%;PCI Device: Red Hat, Inc. Virtio SCSI;           
+  0.0 pkts/s;nic:docker0;           
+  0.0%;runtime-alarmtimer.0.auto;           
+  0.0%;runtime-reg-dummy;           
+  0.0%;runtime-kgdboc;           
+  0.0%;runtime-platform-framebuffer.0;           
+  0.0%;runtime-eisa.0;           
+  0.0%;runtime-Fixed MDIO bus.0;           
+  0.0%;runtime-PNP0103:00;           
+  0.0%;runtime-serial8250;           
+  0.0%;runtime-i8042;           
+  0.0%;runtime-pcspkr;           
+  0.0%;runtime-QEMU0002:00;           
+  0.0 pkts/s;Network interface: eth0 (virtio_net);           
+____________________________________________________________________
+ *  *  *   Process Device Activity   *  *  *
+
+Process;Device
+systemd;/dev/autofs
+;/dev/kmsg
+;/dev/rfkill
+systemd-journal;/dev/kmsg
+;/dev/kmsg
+multipathd;/dev/mapper/control
+systemd-logind;/dev/input/event0
+;/dev/input/event1
+none;/dev/kmsg
+
+____________________________________________________________________
+ *  *  *   AHCI ALPM Residency Statistics - Not supported on this macine   *  *  *
+
+____________________________________________________________________
+ *  *  *   Software Settings in Need of Tuning   *  *  *
+
+Description;Script
+VM writeback timeout;echo '1500' > '/proc/sys/vm/dirty_writeback_centisecs';
+Autosuspend for USB device QEMU USB Tablet [QEMU];echo 'auto' > '/sys/bus/usb/devices/1-1/power/control';
+Runtime PM for PCI Device Intel Corporation 440FX - 82441FX PMC [Natoma];echo 'auto' > '/sys/bus/pci/devices/0000:00:00.0/power/control';
+Runtime PM for PCI Device Intel Corporation 82371SB PIIX3 USB [Natoma/Triton II];echo 'auto' > '/sys/bus/pci/devices/0000:00:01.2/power/control';
+Runtime PM for disk sda;echo 'auto' > '/sys/block/sda/device/power/control';
+Runtime PM for PCI Device Intel Corporation 82371SB PIIX3 ISA [Natoma/Triton II];echo 'auto' > '/sys/bus/pci/devices/0000:00:01.0/power/control';
+Runtime PM for PCI Device Red Hat, Inc. Virtio block device;echo 'auto' > '/sys/bus/pci/devices/0000:00:04.0/power/control';
+Runtime PM for PCI Device Red Hat, Inc. Virtio RNG;echo 'auto' > '/sys/bus/pci/devices/0000:00:1e.0/power/control';
+Runtime PM for PCI Device Red Hat, Inc. Virtio SCSI;echo 'auto' > '/sys/bus/pci/devices/0000:00:01.5/power/control';
+Runtime PM for PCI Device Intel Corporation 82371AB/EB/MB PIIX4 ACPI;echo 'auto' > '/sys/bus/pci/devices/0000:00:01.3/power/control';
+Runtime PM for PCI Device Red Hat, Inc. Virtio network device;echo 'auto' > '/sys/bus/pci/devices/0000:00:03.0/power/control';
+Runtime PM for PCI Device Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II];echo 'auto' > '/sys/bus/pci/devices/0000:00:01.1/power/control';
+Runtime PM for port ata1 of PCI device: Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II];echo 'auto' > '/sys/bus/pci/devices/0000:00:01.1/ata1/power/control';
+Runtime PM for port ata2 of PCI device: Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II];echo 'auto' > '/sys/bus/pci/devices/0000:00:01.1/ata2/power/control';
+Runtime PM for PCI Device Device 1234:1111;echo 'auto' > '/sys/bus/pci/devices/0000:00:02.0/power/control';
+____________________________________________________________________
+ *  *  *   Untunable Software Issues   *  *  *
+
+Description
+____________________________________________________________________
+ *  *  *   Optimal Tuned Software Settings   *  *  *
+
+Description
+NMI watchdog should be turned off
+Autosuspend for USB device UHCI Host Controller [usb1]
+
+____________________________________________________________________
+ *  *  *   Wake status of the devices   *  *  *
+
+Description;Script
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';

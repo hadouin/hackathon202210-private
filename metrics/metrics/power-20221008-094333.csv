@@ -1,0 +1,295 @@
+____________________________________________________________________
+			P o w e r T O P
+
+____________________________________________________________________
+ *  *  *   System Information   *  *  *
+
+PowerTOP Version;v2.11-1-g7ef7f79 ran at Sat Oct  8 09:43:33 2022
+
+Kernel Version;Linux version 5.4.0-104-generic
+System Name;pc-i440fx-4.1
+CPU Information;4 Intel Xeon Processor (Skylake)
+OS Information;Ubuntu 20.04.4 LTS
+
+Target: 1 units/s;System:  1358.0 wakeup/s;CPU:  17.2% usage;GPU: 0 ops/s;GFX: 0 wakeups/s;VFS: 0 ops/s;
+
+____________________________________________________________________
+ *  *  *   Top 10 Power Consumers   *  *  *
+
+Usage;Events/s;Category;Description;PW Estimate
+  1.3%;469.6;Interrupt;[3] net_rx(softirq);  1.88 W  
+  0.2%;302.1;Timer;tick_sched_timer;  1.20 W  
+  0.2%; 81.8;Process;[PID 13034] postgres: stats collector  ;  326 mW  
+  0.0%; 54.9;Process;[PID 11] [rcu_sched];  217 mW  
+  0.1%; 36.7;Timer;hrtimer_wakeup;  146 mW  
+  0.0%; 32.8;kWork;blk_mq_requeue_work;  130 mW  
+  0.8%; 23.9;Process;[PID 11660] postgres ;  107 mW  
+  0.1%; 23.0;Interrupt;[4] block(softirq); 91.7 mW  
+  0.0%; 18.5;kWork;free_work; 73.4 mW  
+  0.1%; 13.2;Interrupt;[7] sched(softirq); 53.9 mW  
+
+____________________________________________________________________
+ *  *  *   Processor Idle State Report   *  *  *
+
+Package;0
+;
+;
+;
+
+CPU;0
+CPU;1
+CPU;2
+CPU;3
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+
+____________________________________________________________________
+ *  *  *   Processor Frequency Report   *  *  *
+
+Package;0
+Idle; 100.0% 
+;
+;
+;
+;
+
+CPU 0
+Idle; 100.0% 
+CPU 1
+Idle; 100.0% 
+CPU 2
+Idle; 100.0% 
+CPU 3
+Idle; 100.0% 
+;
+;
+;
+;
+;
+;
+;
+;
+
+____________________________________________________________________
+ *  *  *   Overview of Software Power Consumers   *  *  *
+
+Usage;Wakeups/s;GPU ops/s;Disk IO/s;GFX Wakeups/s;Category;Description;PW Estimate
+ 13.0 ms/s;469.6;;;;Interrupt;[3] net_rx(softirq);  1.88 W  
+  2.2 ms/s;302.1;;;;Timer;tick_sched_timer;  1.20 W  
+  1.7 ms/s; 81.8;;;;Process;[PID 13034] postgres: stats collector  ;  326 mW  
+254.4 us/s; 54.9;;;;Process;[PID 11] [rcu_sched];  217 mW  
+529.3 us/s; 36.7;;;;Timer;hrtimer_wakeup;  146 mW  
+350.5 us/s; 32.8;;;;kWork;blk_mq_requeue_work;  130 mW  
+  8.3 ms/s; 23.9;;;;Process;[PID 11660] postgres ;  107 mW  
+599.7 us/s; 23.0;;;;Interrupt;[4] block(softirq); 91.7 mW  
+122.1 us/s; 18.5;;;;kWork;free_work; 73.4 mW  
+  1.1 ms/s; 13.2;;;;Interrupt;[7] sched(softirq); 53.9 mW  
+321.5 us/s; 12.9;;;;Process;[PID 8678] /usr/bin/containerd ; 51.6 mW  
+148.3 us/s; 11.9;;;;Process;[PID 8672] /usr/bin/containerd ; 47.3 mW  
+171.2 us/s;  5.1;;;;Process;[PID 8675] /usr/bin/containerd ; 20.5 mW  
+ 73.4 us/s;  4.5;;;;Process;[PID 13062] mongod --auth --bind_ip_all ; 18.0 mW  
+ 24.9 us/s;  3.6;;;;kWork;psi_avgs_work; 14.3 mW  
+110.5 us/s;  3.5;;;;Process;[PID 13071] mongod --auth --bind_ip_all ; 13.9 mW  
+ 93.7 us/s;  3.5;;;;Process;[PID 18] [ksoftirqd/1]; 13.8 mW  
+ 37.4 us/s;  3.3;;;;Process;[PID 10260] /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock ; 13.0 mW  
+ 36.7 us/s;  1.6;;;;Process;[PID 13032] postgres: walwriter  ; 6.37 mW  
+ 55.4 us/s;  1.3;;;;Process;[PID 13031] postgres: background writer  ; 5.09 mW  
+ 54.6 us/s;  1.3;;;;Process;[PID 10710] /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock ; 5.09 mW  
+  0.9 ms/s;  0.9;;;;Process;[PID 13078] mongod --auth --bind_ip_all ; 4.83 mW  
+ 35.8 us/s;  0.9;;;;Process;[PID 13054] mongod --auth --bind_ip_all ; 3.48 mW  
+291.9 us/s;  0.7;;;;Process;[PID 19626] postgres; 3.35 mW  
+291.8 us/s;  0.7;;;;Process;[PID 19768] postgres; 3.35 mW  
+273.8 us/s;  0.7;;;;Process;[PID 19705] postgres; 3.32 mW  
+273.4 us/s;  0.7;;;;Process;[PID 19735] postgres; 3.32 mW  
+272.8 us/s;  0.7;;;;Process;[PID 19728] postgres; 3.32 mW  
+271.6 us/s;  0.7;;;;Process;[PID 19714] postgres; 3.32 mW  
+270.6 us/s;  0.7;;;;Process;[PID 19494] postgres; 3.32 mW  
+268.6 us/s;  0.7;;;;Process;[PID 19452] postgres; 3.31 mW  
+266.4 us/s;  0.7;;;;Process;[PID 19516] postgres; 3.31 mW  
+266.0 us/s;  0.7;;;;Process;[PID 19525] postgres; 3.31 mW  
+264.0 us/s;  0.7;;;;Process;[PID 19778] postgres; 3.31 mW  
+262.8 us/s;  0.7;;;;Process;[PID 19717] postgres; 3.31 mW  
+260.2 us/s;  0.7;;;;Process;[PID 19771] postgres; 3.30 mW  
+ 48.3 us/s;  0.8;;;;Process;[PID 10696] /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock ; 3.23 mW  
+333.3 us/s;  0.7;;;;Process;[PID 19517] postgres; 3.15 mW  
+326.1 us/s;  0.7;;;;Process;[PID 19722] postgres; 3.14 mW  
+324.2 us/s;  0.7;;;;Process;[PID 19640] postgres; 3.14 mW  
+323.9 us/s;  0.7;;;;Process;[PID 19657] postgres; 3.14 mW  
+316.5 us/s;  0.7;;;;Process;[PID 19501] postgres; 3.13 mW  
+315.0 us/s;  0.7;;;;Process;[PID 19575] postgres; 3.12 mW  
+313.3 us/s;  0.7;;;;Process;[PID 19798] postgres; 3.12 mW  
+310.0 us/s;  0.7;;;;Process;[PID 19638] postgres; 3.12 mW  
+309.6 us/s;  0.7;;;;Process;[PID 19510] postgres; 3.12 mW  
+309.6 us/s;  0.7;;;;Process;[PID 19443] postgres; 3.12 mW  
+303.0 us/s;  0.7;;;;Process;[PID 19792] postgres; 3.10 mW  
+302.7 us/s;  0.7;;;;Process;[PID 19587] postgres; 3.10 mW  
+301.7 us/s;  0.7;;;;Process;[PID 19449] postgres; 3.10 mW  
+301.1 us/s;  0.7;;;;Process;[PID 19770] postgres; 3.10 mW  
+299.5 us/s;  0.7;;;;Process;[PID 19742] postgres; 3.10 mW  
+298.5 us/s;  0.7;;;;Process;[PID 19801] postgres; 3.10 mW  
+298.2 us/s;  0.7;;;;Process;[PID 19761] postgres; 3.10 mW  
+295.0 us/s;  0.7;;;;Process;[PID 19513] postgres; 3.09 mW  
+293.1 us/s;  0.7;;;;Process;[PID 19456] postgres; 3.09 mW  
+292.8 us/s;  0.7;;;;Process;[PID 19549] postgres; 3.09 mW  
+291.2 us/s;  0.7;;;;Process;[PID 19503] postgres; 3.09 mW  
+290.2 us/s;  0.7;;;;Process;[PID 19785] postgres; 3.08 mW  
+288.9 us/s;  0.7;;;;Process;[PID 19746] postgres; 3.08 mW  
+288.2 us/s;  0.7;;;;Process;[PID 19630] postgres; 3.08 mW  
+287.4 us/s;  0.7;;;;Process;[PID 19733] postgres; 3.08 mW  
+286.7 us/s;  0.7;;;;Process;[PID 19726] postgres; 3.08 mW  
+285.8 us/s;  0.7;;;;Process;[PID 19466] postgres; 3.08 mW  
+285.8 us/s;  0.7;;;;Process;[PID 19774] postgres; 3.08 mW  
+285.5 us/s;  0.7;;;;Process;[PID 19754] postgres; 3.08 mW  
+285.1 us/s;  0.7;;;;Process;[PID 19447] postgres; 3.08 mW  
+284.2 us/s;  0.7;;;;Process;[PID 19472] postgres; 3.08 mW  
+283.3 us/s;  0.7;;;;Process;[PID 19566] postgres; 3.07 mW  
+280.9 us/s;  0.7;;;;Process;[PID 19740] postgres; 3.07 mW  
+279.7 us/s;  0.7;;;;Process;[PID 19681] postgres; 3.07 mW  
+278.4 us/s;  0.7;;;;Process;[PID 19518] postgres; 3.07 mW  
+278.1 us/s;  0.7;;;;Process;[PID 19470] postgres; 3.07 mW  
+277.9 us/s;  0.7;;;;Process;[PID 19569] postgres; 3.07 mW  
+277.3 us/s;  0.7;;;;Process;[PID 19565] postgres; 3.06 mW  
+277.1 us/s;  0.7;;;;Process;[PID 19656] postgres; 3.06 mW  
+276.3 us/s;  0.7;;;;Process;[PID 19782] postgres; 3.06 mW  
+276.2 us/s;  0.7;;;;Process;[PID 19537] postgres; 3.06 mW  
+276.0 us/s;  0.7;;;;Process;[PID 19534] postgres; 3.06 mW  
+275.5 us/s;  0.7;;;;Process;[PID 19479] postgres; 3.06 mW  
+275.5 us/s;  0.7;;;;Process;[PID 19652] postgres; 3.06 mW  
+275.3 us/s;  0.7;;;;Process;[PID 19597] postgres; 3.06 mW  
+275.3 us/s;  0.7;;;;Process;[PID 19710] postgres; 3.06 mW  
+275.2 us/s;  0.7;;;;Process;[PID 19571] postgres; 3.06 mW  
+275.2 us/s;  0.7;;;;Process;[PID 19731] postgres; 3.06 mW  
+274.5 us/s;  0.7;;;;Process;[PID 19436] postgres; 3.06 mW  
+274.1 us/s;  0.7;;;;Process;[PID 19577] postgres; 3.06 mW  
+273.8 us/s;  0.7;;;;Process;[PID 19573] postgres; 3.06 mW  
+273.4 us/s;  0.7;;;;Process;[PID 19460] postgres; 3.06 mW  
+273.1 us/s;  0.7;;;;Process;[PID 19822] postgres; 3.06 mW  
+272.8 us/s;  0.7;;;;Process;[PID 19544] postgres; 3.06 mW  
+272.7 us/s;  0.7;;;;Process;[PID 19619] postgres; 3.06 mW  
+272.6 us/s;  0.7;;;;Process;[PID 19713] postgres; 3.06 mW  
+272.6 us/s;  0.7;;;;Process;[PID 19555] postgres; 3.06 mW  
+272.3 us/s;  0.7;;;;Process;[PID 19675] postgres; 3.06 mW  
+271.8 us/s;  0.7;;;;Process;[PID 19551] postgres; 3.06 mW  
+271.8 us/s;  0.7;;;;Process;[PID 19522] postgres; 3.06 mW  
+271.6 us/s;  0.7;;;;Process;[PID 19697] postgres; 3.06 mW  
+271.4 us/s;  0.7;;;;Process;[PID 19650] postgres; 3.06 mW  
+271.2 us/s;  0.7;;;;Process;[PID 19614] postgres; 3.06 mW  
+
+
+The system baseline power is estimated at:  5.63  W;
+____________________________________________________________________
+ *  *  *   Device Power Report   *  *  *
+
+Usage;Device Name;PW Estimate
+ 17.3%;CPU misc;  5.63 W   
+ 17.3%;CPU core;    0 mW   
+ 17.3%;DRAM;    0 mW   
+ 2451 pkts/s;Network interface: eth0 (virtio_net);           
+ 2451 pkts/s;nic:br-751ae5d4d490;           
+ 2450 pkts/s;nic:veth5ed8fac;           
+100.0%;PCI Device: Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II];           
+100.0%;PCI Device: Intel Corporation 440FX - 82441FX PMC [Natoma];           
+100.0%;PCI Device: Red Hat, Inc. Virtio RNG;           
+100.0%;PCI Device: Red Hat, Inc. Virtio block device;           
+100.0%;PCI Device: Red Hat, Inc. Virtio network device;           
+100.0%;PCI Device: Intel Corporation 82371AB/EB/MB PIIX4 ACPI;           
+100.0%;PCI Device: Intel Corporation 82371SB PIIX3 USB [Natoma/Triton II];           
+100.0%;PCI Device: Red Hat, Inc. Virtio SCSI;           
+100.0%;PCI Device: Intel Corporation 82371SB PIIX3 ISA [Natoma/Triton II];           
+100.0%;USB device: QEMU USB Tablet (QEMU);           
+100.0%;PCI Device: Device 1234:1111;           
+100.0%;USB device: UHCI Host Controller;           
+  1.0 pkts/s;nic:veth14fb732;           
+  1.0 pkts/s;nic:veth609a2a9;           
+  0.0 pkts/s;nic:vetha53225f;           
+  0.0%;runtime-serial8250;           
+  0.0%;runtime-PNP0103:00;           
+  0.0%;runtime-Fixed MDIO bus.0;           
+  0.0%;runtime-eisa.0;           
+  0.0%;runtime-platform-framebuffer.0;           
+  0.0%;runtime-QEMU0002:00;           
+  0.0%;runtime-reg-dummy;           
+  0.0%;runtime-i8042;           
+  0.0%;runtime-pcspkr;           
+  0.0 pkts/s;nic:docker0;           
+  0.0%;runtime-alarmtimer.0.auto;           
+  0.0%;runtime-kgdboc;           
+____________________________________________________________________
+ *  *  *   Process Device Activity   *  *  *
+
+Process;Device
+systemd;/dev/autofs
+;/dev/kmsg
+;/dev/rfkill
+systemd-journal;/dev/kmsg
+;/dev/kmsg
+multipathd;/dev/mapper/control
+systemd-logind;/dev/input/event0
+;/dev/input/event1
+none;/dev/kmsg
+
+____________________________________________________________________
+ *  *  *   AHCI ALPM Residency Statistics - Not supported on this macine   *  *  *
+
+____________________________________________________________________
+ *  *  *   Software Settings in Need of Tuning   *  *  *
+
+Description;Script
+VM writeback timeout;echo '1500' > '/proc/sys/vm/dirty_writeback_centisecs';
+Autosuspend for USB device QEMU USB Tablet [QEMU];echo 'auto' > '/sys/bus/usb/devices/1-1/power/control';
+Runtime PM for PCI Device Intel Corporation 440FX - 82441FX PMC [Natoma];echo 'auto' > '/sys/bus/pci/devices/0000:00:00.0/power/control';
+Runtime PM for PCI Device Intel Corporation 82371SB PIIX3 USB [Natoma/Triton II];echo 'auto' > '/sys/bus/pci/devices/0000:00:01.2/power/control';
+Runtime PM for disk sda;echo 'auto' > '/sys/block/sda/device/power/control';
+Runtime PM for PCI Device Intel Corporation 82371SB PIIX3 ISA [Natoma/Triton II];echo 'auto' > '/sys/bus/pci/devices/0000:00:01.0/power/control';
+Runtime PM for PCI Device Red Hat, Inc. Virtio block device;echo 'auto' > '/sys/bus/pci/devices/0000:00:04.0/power/control';
+Runtime PM for PCI Device Red Hat, Inc. Virtio RNG;echo 'auto' > '/sys/bus/pci/devices/0000:00:1e.0/power/control';
+Runtime PM for PCI Device Red Hat, Inc. Virtio SCSI;echo 'auto' > '/sys/bus/pci/devices/0000:00:01.5/power/control';
+Runtime PM for PCI Device Intel Corporation 82371AB/EB/MB PIIX4 ACPI;echo 'auto' > '/sys/bus/pci/devices/0000:00:01.3/power/control';
+Runtime PM for PCI Device Red Hat, Inc. Virtio network device;echo 'auto' > '/sys/bus/pci/devices/0000:00:03.0/power/control';
+Runtime PM for PCI Device Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II];echo 'auto' > '/sys/bus/pci/devices/0000:00:01.1/power/control';
+Runtime PM for port ata1 of PCI device: Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II];echo 'auto' > '/sys/bus/pci/devices/0000:00:01.1/ata1/power/control';
+Runtime PM for port ata2 of PCI device: Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II];echo 'auto' > '/sys/bus/pci/devices/0000:00:01.1/ata2/power/control';
+Runtime PM for PCI Device Device 1234:1111;echo 'auto' > '/sys/bus/pci/devices/0000:00:02.0/power/control';
+____________________________________________________________________
+ *  *  *   Untunable Software Issues   *  *  *
+
+Description
+____________________________________________________________________
+ *  *  *   Optimal Tuned Software Settings   *  *  *
+
+Description
+NMI watchdog should be turned off
+Autosuspend for USB device UHCI Host Controller [usb1]
+
+____________________________________________________________________
+ *  *  *   Wake status of the devices   *  *  *
+
+Description;Script
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';

@@ -1,0 +1,5 @@
+@startuml Listexemple
+interface List
+List : int size()
+List : void clear()
+@enduml

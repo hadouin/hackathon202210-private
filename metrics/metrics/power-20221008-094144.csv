@@ -1,0 +1,281 @@
+____________________________________________________________________
+			P o w e r T O P
+
+____________________________________________________________________
+ *  *  *   System Information   *  *  *
+
+PowerTOP Version;v2.11-1-g7ef7f79 ran at Sat Oct  8 09:41:44 2022
+
+Kernel Version;Linux version 5.4.0-104-generic
+System Name;pc-i440fx-4.1
+CPU Information;4 Intel Xeon Processor (Skylake)
+OS Information;Ubuntu 20.04.4 LTS
+
+Target: 1 units/s;System:  180.1 wakeup/s;CPU:  0.6% usage;GPU: 0 ops/s;GFX: 0 wakeups/s;VFS: 0 ops/s;
+
+____________________________________________________________________
+ *  *  *   Top 10 Power Consumers   *  *  *
+
+Usage;Events/s;Category;Description;PW Estimate
+  0.0%; 31.3;Process;[PID 8672] /usr/bin/containerd ;  124 mW  
+  0.0%; 24.3;Process;[PID 8674] /usr/bin/containerd ; 96.8 mW  
+  0.0%; 16.3;Process;[PID 10682] /usr/bin/containerd ; 64.7 mW  
+  0.1%; 15.4;Timer;hrtimer_wakeup; 61.7 mW  
+  0.0%; 12.5;Timer;tick_sched_timer; 49.4 mW  
+  0.0%; 10.0;Process;[PID 13062] mongod --auth --bind_ip_all ; 39.7 mW  
+  0.0%;  9.9;Process;[PID 13071] mongod --auth --bind_ip_all ; 39.5 mW  
+  0.0%;  8.1;Process;[PID 11] [rcu_sched]; 31.9 mW  
+  0.0%;  6.9;Process;[PID 8678] /usr/bin/containerd ; 28.0 mW  
+  0.0%;  6.5;kWork;psi_avgs_work; 25.8 mW  
+
+____________________________________________________________________
+ *  *  *   Processor Idle State Report   *  *  *
+
+Package;0
+;
+;
+;
+
+CPU;0
+CPU;1
+CPU;2
+CPU;3
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+
+____________________________________________________________________
+ *  *  *   Processor Frequency Report   *  *  *
+
+Package;0
+Idle; 100.0% 
+;
+;
+;
+;
+
+CPU 0
+Idle; 100.0% 
+CPU 1
+Idle; 100.0% 
+CPU 2
+Idle; 100.0% 
+CPU 3
+Idle; 100.0% 
+;
+;
+;
+;
+;
+;
+;
+;
+
+____________________________________________________________________
+ *  *  *   Overview of Software Power Consumers   *  *  *
+
+Usage;Wakeups/s;GPU ops/s;Disk IO/s;GFX Wakeups/s;Category;Description;PW Estimate
+272.5 us/s; 31.3;;;;Process;[PID 8672] /usr/bin/containerd ;  124 mW  
+453.3 us/s; 24.3;;;;Process;[PID 8674] /usr/bin/containerd ; 96.8 mW  
+269.2 us/s; 16.3;;;;Process;[PID 10682] /usr/bin/containerd ; 64.7 mW  
+573.6 us/s; 15.4;;;;Timer;hrtimer_wakeup; 61.7 mW  
+ 91.7 us/s; 12.5;;;;Timer;tick_sched_timer; 49.4 mW  
+156.3 us/s; 10.0;;;;Process;[PID 13062] mongod --auth --bind_ip_all ; 39.7 mW  
+196.7 us/s;  9.9;;;;Process;[PID 13071] mongod --auth --bind_ip_all ; 39.5 mW  
+ 37.6 us/s;  8.1;;;;Process;[PID 11] [rcu_sched]; 31.9 mW  
+379.3 us/s;  6.9;;;;Process;[PID 8678] /usr/bin/containerd ; 28.0 mW  
+ 23.4 us/s;  6.5;;;;kWork;psi_avgs_work; 25.8 mW  
+ 48.3 us/s;  4.1;;;;Process;[PID 10260] /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock ; 16.4 mW  
+ 96.2 us/s;  3.1;;;;Process;[PID 10263] /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock ; 12.3 mW  
+ 55.8 us/s;  2.8;;;;Process;[PID 13054] mongod --auth --bind_ip_all ; 11.1 mW  
+  1.5 ms/s;  2.0;;;;Process;[PID 13078] mongod --auth --bind_ip_all ; 10.2 mW  
+ 82.5 us/s;  2.3;;;;Process;[PID 10710] /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock ; 9.08 mW  
+ 36.1 us/s;  2.0;;;;Process;[PID 530] /sbin/multipathd -d -s ; 7.95 mW  
+147.2 us/s;  1.1;;;;Process;[PID 13876] ifstat -n -t -w -i eth0 ; 4.71 mW  
+ 11.0 us/s;  1.1;;;;Interrupt;[4] block(softirq); 4.23 mW  
+ 73.5 us/s;  1.0;;;;Process;[PID 13073] mongod --auth --bind_ip_all ; 4.06 mW  
+ 70.1 us/s;  1.0;;;;Process;[PID 13064] mongod --auth --bind_ip_all ; 4.06 mW  
+ 37.8 us/s;  1.0;;;;Process;[PID 13055] mongod --auth --bind_ip_all ; 4.01 mW  
+194.9 us/s;  0.9;;;;Process;[PID 13048] node app ; 3.99 mW  
+ 23.4 us/s;  1.0;;;;Process;[PID 13066] mongod --auth --bind_ip_all ; 3.99 mW  
+ 20.4 us/s;  1.0;;;;Process;[PID 13068] mongod --auth --bind_ip_all ; 3.98 mW  
+ 20.2 us/s;  1.0;;;;Process;[PID 12987] tini -- /docker-entrypoint.sh mongo-express ; 3.98 mW  
+ 19.9 us/s;  1.0;;;;Process;[PID 13074] mongod --auth --bind_ip_all ; 3.98 mW  
+ 18.3 us/s;  1.0;;;;Process;[PID 13065] mongod --auth --bind_ip_all ; 3.98 mW  
+ 18.2 us/s;  1.0;;;;Process;[PID 13063] mongod --auth --bind_ip_all ; 3.98 mW  
+ 17.0 us/s;  1.0;;;;Process;[PID 13067] mongod --auth --bind_ip_all ; 3.98 mW  
+ 21.9 us/s;  0.9;;;;Process;[PID 11529] php -S [::]:8080 -t /var/www/html ; 3.72 mW  
+  7.5 us/s;  0.6;;;;kWork;vmstat_shepherd; 2.38 mW  
+  7.9 us/s;  0.5;;;;Process;[PID 13069] mongod --auth --bind_ip_all ; 1.86 mW  
+  2.8 us/s;  0.4;;;;kWork;blk_mq_requeue_work; 1.58 mW  
+  2.7 us/s;  0.4;;;;kWork;wb_workfn; 1.58 mW  
+ 33.0 us/s;  0.3;;;;Process;[PID 13192] /usr/bin/containerd-shim-runc-v2 -namespace moby -id 36dca17e3c54044f0799db16cc47ca4af2e6b218054e66af615143a0641b09; 1.37 mW  
+ 28.0 us/s;  0.3;;;;Process;[PID 11514] /usr/bin/containerd-shim-runc-v2 -namespace moby -id 2bc3b3be1b5ee8a91debee0d99c7e98c9e5f0595a220592f695af2768242a2; 1.36 mW  
+ 23.2 us/s;  0.3;;;;Process;[PID 13087] mongod --auth --bind_ip_all ; 1.35 mW  
+ 23.0 us/s;  0.3;;;;Process;[PID 13104] mongod --auth --bind_ip_all ; 1.35 mW  
+ 26.4 us/s; 0.27;;;;Process;[PID 11516] /usr/bin/containerd-shim-runc-v2 -namespace moby -id 2bc3b3be1b5ee8a91debee0d99c7e98c9e5f0595a220592f695af2768242a2; 1.09 mW  
+ 22.4 us/s; 0.27;;;;Process;[PID 13041] /usr/bin/containerd-shim-runc-v2 -namespace moby -id 98a5f7b76ba605f694377677674c8f404fedbf00011c83b9b6735354e15052; 1.09 mW  
+ 12.0 us/s; 0.27;;;;Process;[PID 811] /usr/lib/accountsservice/accounts-daemon ; 1.07 mW  
+ 99.4 us/s; 0.20;;;;Process;[PID 8675] /usr/bin/containerd ;  945 uW  
+ 31.3 us/s; 0.20;;;;Process;[PID 12968] /usr/bin/containerd-shim-runc-v2 -namespace moby -id 98a5f7b76ba605f694377677674c8f404fedbf00011c83b9b6735354e15052;  839 uW  
+ 28.8 us/s; 0.20;;;;Process;[PID 11714] /usr/bin/containerd-shim-runc-v2 -namespace moby -id 36dca17e3c54044f0799db16cc47ca4af2e6b218054e66af615143a0641b09;  835 uW  
+ 20.2 us/s; 0.20;;;;Process;[PID 526] /sbin/multipathd -d -s ;  821 uW  
+  6.7 us/s; 0.20;;;;Process;[PID 13083] mongod --auth --bind_ip_all ;  800 uW  
+  4.8 us/s; 0.20;;;;Timer;watchdog_timer_fn;  797 uW  
+  4.4 us/s; 0.20;;;;Process;[PID 13032] postgres: walwriter  ;  797 uW  
+  3.6 us/s; 0.20;;;;Process;[PID 11640] /usr/bin/containerd-shim-runc-v2 -namespace moby -id 36dca17e3c54044f0799db16cc47ca4af2e6b218054e66af615143a0641b09;  796 uW  
+  2.0 us/s; 0.20;;;;Process;[PID 12966] /usr/bin/containerd-shim-runc-v2 -namespace moby -id 98a5f7b76ba605f694377677674c8f404fedbf00011c83b9b6735354e15052;  793 uW  
+  2.0 us/s; 0.20;;;;Process;[PID 11508] /usr/bin/containerd-shim-runc-v2 -namespace moby -id 2bc3b3be1b5ee8a91debee0d99c7e98c9e5f0595a220592f695af2768242a2;  793 uW  
+ 30.9 us/s; 0.13;;;;Process;[PID 807] /usr/sbin/irqbalance --foreground ;  575 uW  
+ 29.6 us/s; 0.13;;;;Process;[PID 11647] /usr/bin/containerd-shim-runc-v2 -namespace moby -id 36dca17e3c54044f0799db16cc47ca4af2e6b218054e66af615143a0641b09;  573 uW  
+ 20.5 us/s; 0.13;;;;Process;[PID 11511] /usr/bin/containerd-shim-runc-v2 -namespace moby -id 2bc3b3be1b5ee8a91debee0d99c7e98c9e5f0595a220592f695af2768242a2;  558 uW  
+ 15.7 us/s; 0.13;;;;Process;[PID 12971] /usr/bin/containerd-shim-runc-v2 -namespace moby -id 98a5f7b76ba605f694377677674c8f404fedbf00011c83b9b6735354e15052;  551 uW  
+ 15.1 us/s; 0.13;;;;Process;[PID 1816] [jbd2/sda1-8];  550 uW  
+ 11.6 us/s; 0.13;;;;Process;[PID 13105] mongod --auth --bind_ip_all ;  545 uW  
+  2.9 us/s; 0.13;;;;Process;[PID 13031] postgres: background writer  ;  531 uW  
+  2.5 us/s; 0.13;;;;Process;[PID 11461] /usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 8080 -container-ip 172.18.0.3 -container-port 8080 ;  531 uW  
+  1.8 us/s; 0.13;;;;Process;[PID 13716] powertop --csv=/data/metrics/power.csv --time=15 --iteration=1000 ;  529 uW  
+  1.8 us/s; 0.13;;;;Timer;sched_rt_period_timer;  529 uW  
+  1.5 us/s; 0.13;;;;Process;[PID 11453] /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8080 -container-ip 172.18.0.3 -container-port 8080 ;  529 uW  
+  1.4 us/s; 0.13;;;;Process;[PID 12943] /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8081 -container-ip 172.18.0.5 -container-port 8081 ;  529 uW  
+  1.1 us/s; 0.13;;;;Process;[PID 12950] /usr/bin/docker-proxy -proto tcp -host-ip :: -host-port 8081 -container-ip 172.18.0.5 -container-port 8081 ;  528 uW  
+  0.4 us/s; 0.13;;;;kWork;blk_mq_timeout_work;  527 uW  
+108.7 us/s; 0.07;;;;Interrupt;[7] sched(softirq);  433 uW  
+224.4 us/s;;;;;Timer;rh_timer_func;  350 uW  
+ 10.2 us/s; 0.07;;;;Process;[PID 11865] /usr/bin/containerd-shim-runc-v2 -namespace moby -id 2bc3b3be1b5ee8a91debee0d99c7e98c9e5f0595a220592f695af2768242a2;  279 uW  
+  5.8 us/s; 0.07;;;;Process;[PID 13030] postgres: checkpointer  ;  272 uW  
+  4.1 us/s; 0.07;;;;Process;[PID 37] [khungtaskd];  270 uW  
+  1.6 us/s; 0.07;;;;Process;[PID 13034] postgres: stats collector  ;  266 uW  
+  1.1 us/s; 0.07;;;;Process;[PID 12974] /usr/bin/containerd-shim-runc-v2 -namespace moby -id 98a5f7b76ba605f694377677674c8f404fedbf00011c83b9b6735354e15052;  265 uW  
+  1.0 us/s; 0.07;;;;Process;[PID 13070] mongod --auth --bind_ip_all ;  265 uW  
+  0.8 us/s; 0.07;;;;Process;[PID 11642] /usr/bin/containerd-shim-runc-v2 -namespace moby -id 36dca17e3c54044f0799db16cc47ca4af2e6b218054e66af615143a0641b09;  265 uW  
+  0.8 us/s; 0.07;;;;kWork;check_corruption;  264 uW  
+  0.7 us/s; 0.07;;;;Process;[PID 11515] /usr/bin/containerd-shim-runc-v2 -namespace moby -id 2bc3b3be1b5ee8a91debee0d99c7e98c9e5f0595a220592f695af2768242a2;  264 uW  
+  0.2 us/s; 0.07;;;;Process;[PID 18] [ksoftirqd/1];  264 uW  
+  0.1 us/s; 0.07;;;;kWork;neigh_periodic_work;  264 uW  
+ 87.6 us/s;;;;;Process;[PID 8677] /usr/bin/containerd ;  137 uW  
+ 67.8 us/s;;;;;Interrupt;[1] timer(softirq);  106 uW  
+ 47.0 us/s;;;;;Interrupt;[9] RCU(softirq);    0 mW  
+ 44.8 us/s;;;;;Timer;delayed_work_timer_fn;    0 mW  
+ 23.2 us/s;;;;;Process;[PID 13126] [kworker/u8:0];    0 mW  
+ 18.8 us/s;;;;;Timer;process_timeout;    0 mW  
+ 18.8 us/s;;;;;Interrupt;[3] net_rx(softirq);    0 mW  
+ 15.8 us/s;;;;;Process;[PID 11878] [kworker/2:0];    0 mW  
+ 14.9 us/s;;;;;Process;[PID 10280] [kworker/3:0];    0 mW  
+ 11.6 us/s;;;;;Process;[PID 13172] [kworker/0:1];    0 mW  
+ 11.3 us/s;;;;;Process;[PID 12972] /usr/bin/containerd-shim-runc-v2 -namespace moby -id 98a5f7b76ba605f694377677674c8f404fedbf00011c83b9b6735354e15052;    0 mW  
+ 11.2 us/s;;;;;Process;[PID 11643] /usr/bin/containerd-shim-runc-v2 -namespace moby -id 36dca17e3c54044f0799db16cc47ca4af2e6b218054e66af615143a0641b09;    0 mW  
+ 11.1 us/s;;;;;Timer;clocksource_watchdog;    0 mW  
+ 10.1 us/s;;;;;Process;[PID 13642] [kworker/1:0];    0 mW  
+  6.6 us/s;;;;;Timer;blk_stat_timer_fn;    0 mW  
+  4.3 us/s;;;;;kWork;vmstat_update;    0 mW  
+  3.6 us/s;;;;;kWork;blk_mq_run_work_fn;    0 mW  
+  2.3 us/s;;;;;Process;[PID 29] [migration/3];    0 mW  
+  2.2 us/s;;;;;Process;[PID 306] [kworker/2:1H];    0 mW  
+  2.1 us/s;;;;;Process;[PID 13384] [kworker/u8:1];    0 mW  
+  2.0 us/s;;;;;Process;[PID 17] [migration/1];    0 mW  
+  1.8 us/s;;;;;Process;[PID 23] [migration/2];    0 mW  
+
+
+The system baseline power is estimated at:  721 m W;
+____________________________________________________________________
+ *  *  *   Device Power Report   *  *  *
+
+Usage;Device Name;PW Estimate
+  0.6%;CPU misc;  721 mW   
+  0.6%;CPU core;    0 mW   
+  0.6%;DRAM;    0 mW   
+100.0%;PCI Device: Red Hat, Inc. Virtio SCSI;           
+100.0%;PCI Device: Device 1234:1111;           
+100.0%;PCI Device: Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II];           
+100.0%;PCI Device: Red Hat, Inc. Virtio network device;           
+100.0%;PCI Device: Intel Corporation 82371AB/EB/MB PIIX4 ACPI;           
+100.0%;PCI Device: Intel Corporation 440FX - 82441FX PMC [Natoma];           
+100.0%;PCI Device: Red Hat, Inc. Virtio RNG;           
+100.0%;PCI Device: Red Hat, Inc. Virtio block device;           
+100.0%;PCI Device: Intel Corporation 82371SB PIIX3 ISA [Natoma/Triton II];           
+100.0%;USB device: QEMU USB Tablet (QEMU);           
+100.0%;USB device: UHCI Host Controller;           
+100.0%;PCI Device: Intel Corporation 82371SB PIIX3 USB [Natoma/Triton II];           
+  1.0 pkts/s;nic:veth14fb732;           
+  1.0 pkts/s;nic:veth609a2a9;           
+  0.0%;runtime-pcspkr;           
+  0.0 pkts/s;Network interface: eth0 (virtio_net);           
+  0.0%;runtime-i8042;           
+  0.0%;runtime-serial8250;           
+  0.0%;runtime-PNP0103:00;           
+  0.0%;runtime-Fixed MDIO bus.0;           
+  0.0%;runtime-eisa.0;           
+  0.0%;runtime-platform-framebuffer.0;           
+  0.0%;runtime-QEMU0002:00;           
+  0.0%;runtime-reg-dummy;           
+  0.0 pkts/s;nic:br-751ae5d4d490;           
+  0.0 pkts/s;nic:veth5ed8fac;           
+  0.0 pkts/s;nic:docker0;           
+  0.0 pkts/s;nic:vetha53225f;           
+  0.0%;runtime-alarmtimer.0.auto;           
+  0.0%;runtime-kgdboc;           
+____________________________________________________________________
+ *  *  *   Process Device Activity   *  *  *
+
+Process;Device
+systemd;/dev/autofs
+;/dev/kmsg
+;/dev/rfkill
+systemd-journal;/dev/kmsg
+;/dev/kmsg
+multipathd;/dev/mapper/control
+systemd-logind;/dev/input/event0
+;/dev/input/event1
+none;/dev/kmsg
+
+____________________________________________________________________
+ *  *  *   AHCI ALPM Residency Statistics - Not supported on this macine   *  *  *
+
+____________________________________________________________________
+ *  *  *   Software Settings in Need of Tuning   *  *  *
+
+Description;Script
+VM writeback timeout;echo '1500' > '/proc/sys/vm/dirty_writeback_centisecs';
+Autosuspend for USB device QEMU USB Tablet [QEMU];echo 'auto' > '/sys/bus/usb/devices/1-1/power/control';
+Runtime PM for PCI Device Intel Corporation 440FX - 82441FX PMC [Natoma];echo 'auto' > '/sys/bus/pci/devices/0000:00:00.0/power/control';
+Runtime PM for PCI Device Intel Corporation 82371SB PIIX3 USB [Natoma/Triton II];echo 'auto' > '/sys/bus/pci/devices/0000:00:01.2/power/control';
+Runtime PM for disk sda;echo 'auto' > '/sys/block/sda/device/power/control';
+Runtime PM for PCI Device Intel Corporation 82371SB PIIX3 ISA [Natoma/Triton II];echo 'auto' > '/sys/bus/pci/devices/0000:00:01.0/power/control';
+Runtime PM for PCI Device Red Hat, Inc. Virtio block device;echo 'auto' > '/sys/bus/pci/devices/0000:00:04.0/power/control';
+Runtime PM for PCI Device Red Hat, Inc. Virtio RNG;echo 'auto' > '/sys/bus/pci/devices/0000:00:1e.0/power/control';
+Runtime PM for PCI Device Red Hat, Inc. Virtio SCSI;echo 'auto' > '/sys/bus/pci/devices/0000:00:01.5/power/control';
+Runtime PM for PCI Device Intel Corporation 82371AB/EB/MB PIIX4 ACPI;echo 'auto' > '/sys/bus/pci/devices/0000:00:01.3/power/control';
+Runtime PM for PCI Device Red Hat, Inc. Virtio network device;echo 'auto' > '/sys/bus/pci/devices/0000:00:03.0/power/control';
+Runtime PM for PCI Device Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II];echo 'auto' > '/sys/bus/pci/devices/0000:00:01.1/power/control';
+Runtime PM for port ata1 of PCI device: Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II];echo 'auto' > '/sys/bus/pci/devices/0000:00:01.1/ata1/power/control';
+Runtime PM for port ata2 of PCI device: Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II];echo 'auto' > '/sys/bus/pci/devices/0000:00:01.1/ata2/power/control';
+Runtime PM for PCI Device Device 1234:1111;echo 'auto' > '/sys/bus/pci/devices/0000:00:02.0/power/control';
+____________________________________________________________________
+ *  *  *   Untunable Software Issues   *  *  *
+
+Description
+____________________________________________________________________
+ *  *  *   Optimal Tuned Software Settings   *  *  *
+
+Description
+NMI watchdog should be turned off
+Autosuspend for USB device UHCI Host Controller [usb1]
+
+____________________________________________________________________
+ *  *  *   Wake status of the devices   *  *  *
+
+Description;Script
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';

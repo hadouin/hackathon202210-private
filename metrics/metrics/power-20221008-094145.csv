@@ -1,0 +1,276 @@
+____________________________________________________________________
+			P o w e r T O P
+
+____________________________________________________________________
+ *  *  *   System Information   *  *  *
+
+PowerTOP Version;v2.11-1-g7ef7f79 ran at Sat Oct  8 09:41:45 2022
+
+Kernel Version;Linux version 5.4.0-104-generic
+System Name;pc-i440fx-4.1
+CPU Information;4 Intel Xeon Processor (Skylake)
+OS Information;Ubuntu 20.04.4 LTS
+
+Target: 1 units/s;System:  283.1 wakeup/s;CPU:  11.0% usage;GPU: 0 ops/s;GFX: 0 wakeups/s;VFS: 0 ops/s;
+
+____________________________________________________________________
+ *  *  *   Top 10 Power Consumers   *  *  *
+
+Usage;Events/s;Category;Description;PW Estimate
+  0.0%; 47.8;Timer;tick_sched_timer;  189 mW  
+  0.0%; 40.2;Process;[PID 868] /usr/lib/snapd/snapd ;  159 mW  
+  0.0%; 20.0;Process;[PID 11] [rcu_sched]; 79.1 mW  
+  0.0%; 18.7;Process;[PID 8813] /usr/bin/containerd ; 74.3 mW  
+  0.0%; 14.0;Process;[PID 8818] /usr/bin/containerd ; 55.9 mW  
+  0.0%; 11.2;Timer;hrtimer_wakeup; 44.8 mW  
+  0.0%;  9.9;Process;[PID 804] /lib/systemd/systemd-logind ; 39.5 mW  
+  2.2%; 0.20;Process;[PID 16724] /usr/bin/python3 /data/code/app1.py ; 35.2 mW  
+  0.0%;  8.5;kWork;psi_avgs_work; 33.5 mW  
+  0.1%;  7.9;Process;[PID 1] /sbin/init ; 32.0 mW  
+
+____________________________________________________________________
+ *  *  *   Processor Idle State Report   *  *  *
+
+Package;0
+;
+;
+;
+
+CPU;0
+CPU;1
+CPU;2
+CPU;3
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+;;
+
+____________________________________________________________________
+ *  *  *   Processor Frequency Report   *  *  *
+
+Package;0
+Idle; 100.0% 
+;
+;
+;
+;
+
+CPU 0
+Idle; 100.0% 
+CPU 1
+Idle; 100.0% 
+CPU 2
+Idle; 100.0% 
+CPU 3
+Idle; 100.0% 
+;
+;
+;
+;
+;
+;
+;
+;
+
+____________________________________________________________________
+ *  *  *   Overview of Software Power Consumers   *  *  *
+
+Usage;Wakeups/s;GPU ops/s;Disk IO/s;GFX Wakeups/s;Category;Description;PW Estimate
+321.1 us/s; 47.8;;;;Timer;tick_sched_timer;  189 mW  
+277.9 us/s; 40.2;;;;Process;[PID 868] /usr/lib/snapd/snapd ;  159 mW  
+ 80.8 us/s; 20.0;;;;Process;[PID 11] [rcu_sched]; 79.1 mW  
+217.0 us/s; 18.7;;;;Process;[PID 8813] /usr/bin/containerd ; 74.3 mW  
+432.6 us/s; 14.0;;;;Process;[PID 8818] /usr/bin/containerd ; 55.9 mW  
+381.0 us/s; 11.2;;;;Timer;hrtimer_wakeup; 44.8 mW  
+384.3 us/s;  9.9;;;;Process;[PID 804] /lib/systemd/systemd-logind ; 39.5 mW  
+ 22.0 ms/s; 0.20;;;;Process;[PID 16724] /usr/bin/python3 /data/code/app1.py ; 35.2 mW  
+ 38.8 us/s;  8.5;;;;kWork;psi_avgs_work; 33.5 mW  
+631.9 us/s;  7.9;;;;Process;[PID 1] /sbin/init ; 32.0 mW  
+  1.3 ms/s;  5.7;;;;Process;[PID 411] /lib/systemd/systemd-udevd ; 24.7 mW  
+ 14.8 ms/s; 0.07;;;;Process;[PID 18524] landscape-sysin; 23.4 mW  
+ 14.7 ms/s; 0.07;;;;Process;[PID 18435] landscape-sysin; 23.2 mW  
+ 14.7 ms/s; 0.07;;;;Process;[PID 18349] landscape-sysin; 23.1 mW  
+ 23.9 us/s;  5.1;;;;kWork;free_work; 20.3 mW  
+ 49.5 us/s;  4.8;;;;Process;[PID 1087] /usr/lib/snapd/snapd ; 19.0 mW  
+108.0 us/s;  4.6;;;;Interrupt;[3] net_rx(softirq); 18.3 mW  
+223.0 us/s;  3.6;;;;Process;[PID 8819] /usr/bin/containerd ; 14.6 mW  
+192.9 us/s;  3.2;;;;Process;[PID 8814] /usr/bin/containerd ; 12.9 mW  
+  0.9 ms/s;  2.2;;;;Process;[PID 18496] sshd; 10.1 mW  
+  1.0 ms/s;  2.1;;;;Process;[PID 18409] sshd; 9.93 mW  
+ 79.0 us/s;  2.3;;;;Process;[PID 902] /usr/lib/snapd/snapd ; 9.07 mW  
+ 25.5 us/s;  2.3;;;;Process;[PID 1090] /usr/lib/snapd/snapd ; 8.99 mW  
+250.8 us/s;  2.1;;;;Interrupt;[7] sched(softirq); 8.55 mW  
+454.1 us/s;  1.9;;;;Process;[PID 378] /lib/systemd/systemd-journald ; 8.34 mW  
+ 42.6 us/s;  1.9;;;;Process;[PID 531] /sbin/multipathd -d -s ; 7.70 mW  
+177.1 us/s;  1.7;;;;kWork;memcg_kmem_cache_create_func; 6.85 mW  
+115.1 us/s;  1.6;;;;Process;[PID 881] /usr/lib/policykit-1/polkitd --no-debug ; 6.49 mW  
+106.2 us/s;  1.5;;;;Process;[PID 866] /usr/lib/udisks2/udisksd ; 5.95 mW  
+391.5 us/s;  1.3;;;;Process;[PID 18410] sshd; 5.87 mW  
+149.5 us/s;  1.3;;;;Process;[PID 1089] /usr/lib/snapd/snapd ; 5.50 mW  
+393.3 us/s;  1.2;;;;Process;[PID 18497] sshd; 5.35 mW  
+ 83.6 us/s;  1.3;;;;Process;[PID 870] /usr/lib/snapd/snapd ; 5.13 mW  
+ 70.1 us/s;  1.3;;;;Process;[PID 864] /usr/sbin/rsyslogd -n -iNONE ; 5.11 mW  
+ 59.0 us/s;  1.3;;;;Process;[PID 862] /usr/sbin/rsyslogd -n -iNONE ; 5.09 mW  
+101.9 us/s;  1.2;;;;Process;[PID 865] /usr/lib/accountsservice/accounts-daemon ; 4.90 mW  
+147.9 us/s;  1.1;;;;Process;[PID 18006] ifstat -n -t -w -i eth0 ; 4.70 mW  
+649.6 us/s;  0.9;;;;Process;[PID 18418] systemd-udevd; 4.70 mW  
+ 70.7 us/s;  1.1;;;;Process;[PID 797] /usr/lib/accountsservice/accounts-daemon ; 4.58 mW  
+  2.0 ms/s; 0.20;;;;Process;[PID 18542] 91-release-upgr; 3.95 mW  
+434.7 us/s;  0.8;;;;Process;[PID 18513] /lib/systemd/systemd-udevd ; 3.84 mW  
+  1.9 ms/s; 0.20;;;;Process;[PID 18367] 91-release-upgr; 3.74 mW  
+506.9 us/s;  0.7;;;;Process;[PID 899] /usr/lib/snapd/snapd ; 3.42 mW  
+162.7 us/s;  0.8;;;;Process;[PID 18492] sshd; 3.41 mW  
+175.7 us/s;  0.7;;;;Process;[PID 18406] sshd; 3.17 mW  
+  6.7 us/s;  0.8;;;;kWork;blk_mq_requeue_work; 3.17 mW  
+ 97.3 us/s;  0.7;;;;Process;[PID 878] /usr/lib/policykit-1/polkitd --no-debug ; 3.05 mW  
+569.7 us/s;  0.5;;;;Process;[PID 18324] systemd-udevd; 2.99 mW  
+167.2 us/s;  0.7;;;;Process;[PID 18581] sshd; 2.89 mW  
+  1.2 ms/s; 0.20;;;;Process;[PID 18453] lsb_release; 2.59 mW  
+121.2 us/s;  0.6;;;;kWork;kmemcg_workfn; 2.56 mW  
+347.6 us/s;  0.5;;;;Process;[PID 18332] systemd-udevd; 2.38 mW  
+117.9 us/s;  0.5;;;;Process;[PID 18325] sshd; 2.03 mW  
+220.9 us/s;  0.4;;;;Process;[PID 18504] /lib/systemd/systemd-udevd ; 1.92 mW  
+  9.7 us/s;  0.5;;;;kWork;css_free_rwork_fn; 1.86 mW  
+  7.6 us/s;  0.5;;;;Timer;watchdog_timer_fn; 1.85 mW  
+ 13.4 us/s;  0.4;;;;Interrupt;[4] block(softirq); 1.60 mW  
+ 10.5 us/s;  0.4;;;;kWork;wb_workfn; 1.60 mW  
+  1.8 us/s;  0.4;;;;kWork;key_garbage_collector; 1.58 mW  
+480.7 us/s; 0.20;;;;Process;[PID 18413] systemd-udevd; 1.54 mW  
+  0.8 ms/s; 0.07;;;;Process;[PID 18453] 91-release-upgr; 1.46 mW  
+  7.6 us/s;  0.3;;;;Timer;timerfd_tmrproc; 1.33 mW  
+  2.5 us/s;  0.3;;;;kWork;kernfs_notify_workfn; 1.32 mW  
+  0.5 us/s;  0.3;;;;kWork;drain_local_stock; 1.32 mW  
+ 96.7 us/s; 0.27;;;;Process;[PID 18481] 97-overlayroot; 1.20 mW  
+400.1 us/s; 0.13;;;;Process;[PID 17845] powertop --csv=/data/metrics/power.csv --time=15 --iteration=1000 ; 1.15 mW  
+ 60.8 us/s; 0.27;;;;Process;[PID 18522] 50-landscape-sy; 1.15 mW  
+217.7 us/s; 0.20;;;;Process;[PID 18552] apt-config; 1.13 mW  
+216.5 us/s; 0.20;;;;Process;[PID 18414] systemd-udevd; 1.13 mW  
+ 34.6 us/s; 0.27;;;;Process;[PID 18426] 00-header; 1.11 mW  
+ 28.8 us/s; 0.27;;;;Process;[PID 303] [jbd2/vda1-8]; 1.10 mW  
+ 19.9 us/s; 0.27;;;;Process;[PID 1963] [jbd2/sda1-8]; 1.08 mW  
+ 18.1 us/s; 0.27;;;;Process;[PID 18431] 50-landscape-sy; 1.08 mW  
+184.3 us/s; 0.20;;;;Process;[PID 18407] sshd; 1.08 mW  
+181.8 us/s; 0.20;;;;Process;[PID 18582] sshd; 1.07 mW  
+180.5 us/s; 0.20;;;;Process;[PID 18493] sshd; 1.07 mW  
+  7.1 us/s; 0.27;;;;kWork;vmstat_shepherd; 1.06 mW  
+656.0 us/s;;;;;Process;[PID 18349] 50-landscape-sy; 1.02 mW  
+648.0 us/s;;;;;Process;[PID 18524] 50-landscape-sy; 1.01 mW  
+307.5 us/s; 0.13;;;;Process;[PID 18415] systemd-udevd; 1.01 mW  
+635.4 us/s;;;;;Process;[PID 18435] 50-landscape-sy;  991 uW  
+105.3 us/s; 0.20;;;;Process;[PID 18495] /lib/systemd/systemd-udevd ;  954 uW  
+103.8 us/s; 0.20;;;;Process;[PID 18561] apt-config;  951 uW  
+103.3 us/s; 0.20;;;;Process;[PID 18386] apt-config;  950 uW  
+102.7 us/s; 0.20;;;;Process;[PID 18401] update-motd-fsc;  950 uW  
+101.4 us/s; 0.20;;;;Process;[PID 18466] apt-config;  948 uW  
+607.1 us/s;;;;;Process;[PID 789] /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only ;  947 uW  
+266.0 us/s; 0.13;;;;Process;[PID 18506] /lib/systemd/systemd-udevd ;  941 uW  
+253.5 us/s; 0.13;;;;Process;[PID 18416] systemd-udevd;  922 uW  
+ 81.6 us/s; 0.20;;;;Process;[PID 18562] update-motd-hwe;  917 uW  
+ 80.0 us/s; 0.20;;;;Process;[PID 18350] landscape-sysin;  914 uW  
+ 75.3 us/s; 0.20;;;;Process;[PID 18473] update-motd-hwe;  907 uW  
+ 72.6 us/s; 0.20;;;;Process;[PID 18387] update-motd-hwe;  903 uW  
+236.7 us/s; 0.13;;;;Process;[PID 18462] update-motd-hwe;  895 uW  
+ 56.9 us/s; 0.20;;;;Process;[PID 18457] release-upgrade;  878 uW  
+225.3 us/s; 0.13;;;;Process;[PID 18352] landscape-sysin;  878 uW  
+224.8 us/s; 0.13;;;;Process;[PID 18376] update-motd-hwe;  877 uW  
+ 56.1 us/s; 0.20;;;;Process;[PID 18455] 91-release-upgr;  877 uW  
+ 54.0 us/s; 0.20;;;;Process;[PID 18388] update-motd-hwe;  874 uW  
+ 50.8 us/s; 0.20;;;;Process;[PID 18474] update-motd-hwe;  869 uW  
+
+
+The system baseline power is estimated at:  1.29  W;
+____________________________________________________________________
+ *  *  *   Device Power Report   *  *  *
+
+Usage;Device Name;PW Estimate
+ 11.1%;CPU misc;  1.29 W   
+ 11.1%;CPU core;    0 mW   
+ 11.1%;DRAM;    0 mW   
+100.0%;PCI Device: Red Hat, Inc. Virtio SCSI;           
+100.0%;PCI Device: Red Hat, Inc. Virtio network device;           
+100.0%;PCI Device: Device 1234:1111;           
+100.0%;PCI Device: Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II];           
+100.0%;PCI Device: Intel Corporation 82371AB/EB/MB PIIX4 ACPI;           
+100.0%;PCI Device: Intel Corporation 440FX - 82441FX PMC [Natoma];           
+100.0%;PCI Device: Intel Corporation 82371SB PIIX3 ISA [Natoma/Triton II];           
+100.0%;PCI Device: Intel Corporation 82371SB PIIX3 USB [Natoma/Triton II];           
+100.0%;PCI Device: Red Hat, Inc. Virtio block device;           
+100.0%;USB device: QEMU USB Tablet (QEMU);           
+100.0%;USB device: UHCI Host Controller;           
+100.0%;PCI Device: Red Hat, Inc. Virtio RNG;           
+  9.8 pkts/s;Network interface: eth0 (virtio_net);           
+  0.0%;runtime-QEMU0002:00;           
+  0.0%;runtime-pcspkr;           
+  0.0%;runtime-i8042;           
+  0.0%;runtime-serial8250;           
+  0.0%;runtime-PNP0103:00;           
+  0.0%;runtime-Fixed MDIO bus.0;           
+  0.0%;runtime-eisa.0;           
+  0.0%;runtime-platform-framebuffer.0;           
+  0.0%;runtime-kgdboc;           
+  0.0%;runtime-reg-dummy;           
+  0.0%;runtime-alarmtimer.0.auto;           
+  0.0 pkts/s;nic:docker0;           
+____________________________________________________________________
+ *  *  *   Process Device Activity   *  *  *
+
+Process;Device
+systemd;/dev/autofs
+;/dev/kmsg
+;/dev/rfkill
+systemd-journal;/dev/kmsg
+;/dev/kmsg
+multipathd;/dev/mapper/control
+systemd-logind;/dev/input/event0
+;/dev/input/event1
+none;/dev/kmsg
+
+____________________________________________________________________
+ *  *  *   AHCI ALPM Residency Statistics - Not supported on this macine   *  *  *
+
+____________________________________________________________________
+ *  *  *   Software Settings in Need of Tuning   *  *  *
+
+Description;Script
+VM writeback timeout;echo '1500' > '/proc/sys/vm/dirty_writeback_centisecs';
+Autosuspend for USB device QEMU USB Tablet [QEMU];echo 'auto' > '/sys/bus/usb/devices/1-1/power/control';
+Runtime PM for PCI Device Intel Corporation 440FX - 82441FX PMC [Natoma];echo 'auto' > '/sys/bus/pci/devices/0000:00:00.0/power/control';
+Runtime PM for PCI Device Intel Corporation 82371SB PIIX3 USB [Natoma/Triton II];echo 'auto' > '/sys/bus/pci/devices/0000:00:01.2/power/control';
+Runtime PM for disk sda;echo 'auto' > '/sys/block/sda/device/power/control';
+Runtime PM for PCI Device Intel Corporation 82371SB PIIX3 ISA [Natoma/Triton II];echo 'auto' > '/sys/bus/pci/devices/0000:00:01.0/power/control';
+Runtime PM for PCI Device Red Hat, Inc. Virtio block device;echo 'auto' > '/sys/bus/pci/devices/0000:00:04.0/power/control';
+Runtime PM for PCI Device Red Hat, Inc. Virtio RNG;echo 'auto' > '/sys/bus/pci/devices/0000:00:1e.0/power/control';
+Runtime PM for PCI Device Red Hat, Inc. Virtio SCSI;echo 'auto' > '/sys/bus/pci/devices/0000:00:01.5/power/control';
+Runtime PM for PCI Device Intel Corporation 82371AB/EB/MB PIIX4 ACPI;echo 'auto' > '/sys/bus/pci/devices/0000:00:01.3/power/control';
+Runtime PM for PCI Device Red Hat, Inc. Virtio network device;echo 'auto' > '/sys/bus/pci/devices/0000:00:03.0/power/control';
+Runtime PM for PCI Device Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II];echo 'auto' > '/sys/bus/pci/devices/0000:00:01.1/power/control';
+Runtime PM for port ata1 of PCI device: Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II];echo 'auto' > '/sys/bus/pci/devices/0000:00:01.1/ata1/power/control';
+Runtime PM for port ata2 of PCI device: Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II];echo 'auto' > '/sys/bus/pci/devices/0000:00:01.1/ata2/power/control';
+Runtime PM for PCI Device Device 1234:1111;echo 'auto' > '/sys/bus/pci/devices/0000:00:02.0/power/control';
+____________________________________________________________________
+ *  *  *   Untunable Software Issues   *  *  *
+
+Description
+____________________________________________________________________
+ *  *  *   Optimal Tuned Software Settings   *  *  *
+
+Description
+NMI watchdog should be turned off
+Autosuspend for USB device UHCI Host Controller [usb1]
+
+____________________________________________________________________
+ *  *  *   Wake status of the devices   *  *  *
+
+Description;Script
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
+Wake status for USB device usb1;echo 'enabled' > '/sys/bus/usb/devices/usb1/power/wakeup';
+Wake status for USB device 1-1;echo 'enabled' > '/sys/bus/usb/devices/1-1/power/wakeup';
