@@ -1,3 +1,29 @@
+CREATE TABLE Mongo_aggregate_data (
+    id SERIAL PRIMARY KEY,
+    identifier varchar(255) NOT NULL,
+    manufacturerName varchar(255) NOT NULL,
+    startTime TIMESTAMP NOT NULL,
+    endTime TIMESTAMP NOT NULL,
+    wifiAggregate integer NOT NULL,
+    FOREIGN KEY (id) REFERENCES Mongo_aggregate_wifi(id)
+);
+CREATE TABLE Mongo_aggregate_wifi (
+    id SERIAL PRIMARY KEY,
+    countBandChange integer NOT NULL,
+    minRSSI integer NOT NULL,
+    maxRSSI integer NOT NULL,
+    avgRSSI integer NOT NULL,
+
+);
+CREATE TABLE anomalies_report (
+    id SERIAL PRIMARY KEY,
+    eventTime
+    FOREIGN KEY (data_id) REFERENCES Mongo_aggregate_data(id)
+);
+
+
+
+
 CREATE TABLE product_items (
     id SERIAL PRIMARY KEY,
     product_id integer NOT NULL,
