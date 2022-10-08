@@ -1,6 +1,4 @@
 import json
-from pymongo import database
-from pymongo.mongo_client import MongoClient
 
 ###
 # This Sink service transform incoming WiFi data from one station (PC,Smartphone, IoT Device, Sound device ...) 
@@ -34,15 +32,6 @@ from pymongo.mongo_client import MongoClient
 # Threshold used for RSSI
 RSSITHRESHOLD = -70
 
-#MongoDB ENV
-MONGO_DB_HOST= "db1"
-MONGO_DB_PORT = 27017
-MONGO_DB_USERNAME = "mongodb"
-MONGO_DB_PASSWORD = "mongodb"
-
-MONGO_DB_DATABASE_NAME = "dataLake"
-MONGO_DB_COLLECTION_NAME = "wifi"
-
 # Main function
 def sink_aggregation(json_data):
     aggregate_data = {
@@ -72,16 +61,7 @@ def sink_aggregation(json_data):
 
     identifier_data = json_data["info"]["identifier"]
 
-    # Mongo Insert data into mongoDB
-    try:
-        mongo_server = MongoClient(f"mongodb://{MONGO_DB_USERNAME}:{MONGO_DB_PASSWORD}@{MONGO_DB_HOST}:{MONGO_DB_PORT}/")
-        insert_data_mongo(mongo_server,aggregate_data)        
-
-        # Find the data into mongoDB
-        result_aggregate_data = find_data_mongo(mongo_server,identifier_data)
-    except:
-        result_aggregate_data = {}
-    return result_aggregate_data
+    return aggregate_data
 
 
 def find_min(array,key):
@@ -139,23 +119,3 @@ def detect_anomaly_min(array,key,threshold):
                 anomaly_report["rssi"] = array[i]["rssi"]
                 array_anomaly.append(anomaly_report)
     return array_anomaly
-
-
-# Connect on mongodb and post one aggregated WiFi Data
-def insert_data_mongo(mongo_server: MongoClient,json_insert):
-    try:
-        collection = mongo_server[MONGO_DB_DATABASE_NAME][MONGO_DB_COLLECTION_NAME]
-        collection.insert_one(json_insert)
-        return True
-    except OverflowError:
-        print("Cannot put data into MongoDB")
-        return False
-
-def find_data_mongo(mongo_server: MongoClient, identifier:str):
-    result = {}
-    try:
-        result = mongo_server[MONGO_DB_DATABASE_NAME][MONGO_DB_COLLECTION_NAME]\
-            .find_one({"identifier": identifier},{"_id": 0})
-    except:
-        print("Cannot find data into MongoDB")
-    return result
